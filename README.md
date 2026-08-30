@@ -55,7 +55,7 @@ Disaster-Response-System/
 │   └── db.py                  SQLite schema, seed data, query helpers
 │
 ├── templates/                 Jinja2 pages (dashboard, predictions, traffic, hospitals,
-│                               rescue, alerts, admin_zones, login)
+│                               rescue, alerts, admin_zones, login, signup, citizen_*)
 ├── static/css/style.css       Design system ("Sentinel Grid" command-center theme)
 ├── static/js/                 Per-page dashboard logic (polls the JSON API every 15s)
 ├── datasets/                  Generated training CSVs
@@ -105,6 +105,10 @@ Admin (full access, incl. /admin/zones):
 Operator (dashboard + deploy/recall, no zone management):
   email:    operator@disaster-response.local
   password: operator123
+
+Resident (public citizen portal only, /citizen):
+  email:    resident@disaster-response.local
+  password: resident123
 ```
 
 The database (`database/disaster_response.db`) and its demo hospitals/rescue
@@ -121,6 +125,7 @@ teams/users/zones are created automatically the first time you run `app.py`.
 - **Rescue Ops (`/rescue`)** — team status, zone priority ranking, the auto-generated deployment plan with a **Deploy** action, and an **Active deployments** table with a **Recall** action.
 - **Alerts (`/alerts`)** — the auto-generated High-risk alert log, plus a full **Disaster event log** below it showing every Weather Agent assessment (the `disasters` table).
 - **Manage Zones (`/admin/zones`, admin only)** — add or remove monitored zones at runtime. Every agent reads zones from the database, so a new zone shows up on the very next 15-second refresh — no code change or restart required.
+- **Citizen portal (`/citizen`, any logged-in account)** — a separate, simpler public UI: plain-language risk cards, an evacuation-route finder, a hospital directory with tap-to-call, and a chatbot. Anyone can create an account at `/signup`. See "Citizen portal" below.
 
 All pages poll their JSON API every 15 seconds (`/api/dashboard`, `/api/weather`, `/api/traffic`, `/api/hospitals`, `/api/rescue`, `/api/alerts`, `/api/incidents`) so the whole dashboard feels live without a page refresh. Change `POLL_INTERVAL_MS` in `config.py` to adjust that.
 
@@ -139,6 +144,48 @@ Clicking **Recall** on an active deployment reverses all three — the team
 becomes available again and the beds are released. This state lives in the
 `deployments` table (see `database/db.py`), so it survives a server
 restart.
+
+### Citizen portal — a separate, simpler public front end
+
+Anyone can create a free account at **`/signup`** — no admin approval
+needed. This always creates a `citizen` role account; there's no form
+field or trick that grants operator/admin access through self-registration.
+
+Citizen accounts see a completely different, much simpler surface at
+**`/citizen`**, styled for a general audience rather than an operations
+team:
+
+- **`/citizen`** — plain-language risk per zone ("All clear" / "Stay
+  alert" / "Take action" instead of raw ML output)
+- **`/citizen/evacuation`** — pick your area, get the safest direction and
+  an ETA
+- **`/citizen/hospitals`** — hospital list with tap-to-call contact buttons
+  and live bed counts
+- **`/citizen/chat`** ("Ask Sentinel") — a chatbot answering plain-language
+  questions about risk, evacuation, and hospitals
+
+**Important — this closed a real access-control gap.** Before this
+feature, `/dashboard`, `/rescue`, and even `/api/deploy`/`/api/recall` were
+only gated by `login_required` (any authenticated user). That was fine
+when only admin/operator accounts existed, but the moment `/signup` made
+account creation public, a citizen would have had the same power to
+dispatch real rescue teams as an admin. Fixed with a new `staff_required`
+decorator (admin or operator, not citizen) now applied to the entire ops
+command center — see `app.py` for the full list of routes it protects.
+
+**The chatbot** (`agents/citizen_chat_agent.py`) answers only from the
+same live data the rest of the app already computes — it can't invent a
+risk level, hospital name, or phone number that isn't actually in the
+database. Two modes, matching the simulate-by-default pattern used
+elsewhere in this project:
+
+- **Default** — a small, zero-dependency keyword/intent matcher. Always
+  available, fully deterministic, unit tested
+  (`tests/test_citizen_chat.py`).
+- **`ANTHROPIC_API_KEY` set** — the same live context is handed to Claude
+  for a more natural free-form answer, constrained by a system prompt to
+  only use the provided data. Falls back to the rule-based matcher if the
+  call fails, so the chatbot never just breaks.
 
 ---
 
@@ -202,6 +249,16 @@ Everything currently runs in **simulation mode**. To connect real services:
    (route polyline decoding is left as a small follow-up — see the comment
    in that file).
 
+3. **Citizen chatbot — Claude API (optional)**
+   Get a key at https://console.anthropic.com, then set:
+   ```bash
+   export ANTHROPIC_API_KEY="your-key-here"
+   pip install anthropic
+   ```
+   `agents/citizen_chat_agent.py` will use Claude for more natural
+   free-form answers instead of the keyword matcher — same live data
+   either way, and it silently falls back to the matcher if the call fails.
+
 3. **A production database.** SQLite is fine for a demo or small deployment.
    For MySQL/PostgreSQL, only `database/db.py` needs to change — every other
    file calls the `query()` / `log_alert()` / `init_db()` functions in that
@@ -211,8 +268,9 @@ Everything currently runs in **simulation mode**. To connect real services:
    `database/db.py::_seed_demo_data()`, or write directly to the `hospitals`
    and `rescue_teams` tables from an admin panel you build on top of this.
 
-5. **Your own city.** Edit `Config.ZONES` in `config.py` — every agent, the
-   map, and the seed data all read from that one list.
+5. **Your own city.** Add/remove zones at runtime from `/admin/zones` as an
+   admin user, or edit `Config.DEFAULT_ZONES` in `config.py` to change what
+   gets seeded on first run.
 
 ---
 
@@ -303,6 +361,36 @@ the pure-function unit tests, which run with zero extra dependencies via
 - Added `tests/` (stdlib `unittest`, no new dependency) covering the geo
   and scoring pure functions.
 
+**Frontend robustness**
+- `dashboard.js`/`traffic.js` crashed the entire page (not just the map)
+  when the Leaflet CDN was blocked or slow — `initMap()` threw before
+  `refreshDashboard()` ever ran. Now wrapped so a map/chart failure only
+  affects that one panel; same fix applied to `predictions.js` and
+  Chart.js. Caught by actually running this in a sandboxed browser with no
+  outbound internet access — a real scenario for anyone behind a
+  restrictive proxy or ad-blocker, not just this environment.
+
+**Citizen portal (public-facing addition)**
+- Added self-service signup (`/signup`, always creates a `citizen`-role
+  account) and a separate, simpler public UI at `/citizen/*`: plain-language
+  risk cards, an evacuation-route finder, a hospital directory with
+  tap-to-call buttons, and a chatbot (`agents/citizen_chat_agent.py`).
+- The chatbot answers only from the same live data the other agents
+  already produce — no separate knowledge base to drift out of sync — with
+  a zero-dependency keyword matcher by default and an optional Claude API
+  upgrade (`ANTHROPIC_API_KEY`) for more natural free-form answers.
+- **Making signup public exposed a real access-control gap**: `/dashboard`,
+  `/rescue`, and `/api/deploy`/`/api/recall` were only behind
+  `login_required` (any authenticated account), which was fine while only
+  admin/operator accounts existed. Once anyone could self-register, a
+  citizen account would have had the same power to dispatch real rescue
+  teams as an admin. Fixed with a new `staff_required` decorator
+  (admin/operator only) now guarding the entire ops command center —
+  verified with real requests that a citizen account gets redirected, not
+  served, from every ops route and action.
+- `users.zone` (nullable) added via an idempotent migration so existing
+  database files upgrade in place without deleting them.
+
 ## 10. Roadmap — not done in this pass, and why
 
 These were flagged as worth doing but need infrastructure/credentials this
@@ -320,3 +408,6 @@ environment doesn't have, so they're documented rather than half-built:
   would be a small addition.
 - **PDF export of the deployment plan** — a good next feature, skipped for
   scope in this pass.
+- **Chat history persistence** — the citizen chatbot is currently stateless
+  per page load (no saved conversation log). Would need a `chat_messages`
+  table keyed by user id; skipped to keep this pass's scope bounded.

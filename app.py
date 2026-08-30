@@ -14,6 +14,9 @@ Demo login (admin):
 Demo login (operator, no zone-management access):
     email:    operator@disaster-response.local
     password: operator123
+Demo login (citizen — public portal, /citizen):
+    email:    resident@disaster-response.local
+    password: resident123
 
 Changelog (hardening pass) — see README.md "Changelog" section for the
 full write-up. Summary of what changed in this file specifically:
@@ -30,6 +33,10 @@ full write-up. Summary of what changed in this file specifically:
   - Added /api/deploy, /api/recall (turn a recommendation into a real,
     reversible state change) and /admin/zones (dynamic zone management,
     previously required editing Config.ZONES and redeploying).
+  - Added a public-facing citizen portal (/citizen/*): self-service
+    signup, a plain-language risk/evacuation/hospital view, and a chatbot
+    (agents/citizen_chat_agent.py) — separate from the operator/admin
+    command dashboard and gated only by login_required, not admin_required.
 """
 
 import logging
@@ -40,19 +47,20 @@ from flask import (
     Flask, render_template, redirect, url_for, session, request,
     jsonify, flash, abort,
 )
-from werkzeug.security import check_password_hash
+from werkzeug.security import check_password_hash, generate_password_hash
 
 from config import Config, DEFAULT_SECRET_KEY
 from database.db import (
     init_db, query, get_zones, add_zone, delete_zone,
     get_recent_disasters, record_login_attempt, count_recent_failed_attempts,
-    log_alert,
+    log_alert, get_user_by_email, create_citizen,
 )
 from agents.weather_agent import weather_agent
 from agents.traffic_agent import traffic_agent
 from agents.hospital_agent import hospital_agent
 from agents.rescue_agent import rescue_agent
 from agents.coordinator_agent import coordinator_agent
+from agents.citizen_chat_agent import answer as chat_answer
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -87,6 +95,24 @@ def admin_required(view):
         if session.get("role") != "admin":
             flash("That page requires an administrator account.", "error")
             return redirect(url_for("dashboard"))
+        return view(*args, **kwargs)
+    return wrapped
+
+
+def staff_required(view):
+    """Admin or operator — i.e. anyone but a citizen account. Guards the
+    entire ops command center (dashboard, rescue, deploy/recall, alerts)
+    now that /signup lets the public create accounts. Without this, a
+    self-registered citizen would have had the same power to dispatch real
+    rescue teams as an admin — login_required alone isn't enough once
+    account creation is public."""
+    @wraps(view)
+    def wrapped(*args, **kwargs):
+        if not session.get("user_id"):
+            return redirect(url_for("login", next=request.path))
+        if session.get("role") not in ("admin", "operator"):
+            flash("That page is for response-team accounts. Try the citizen portal instead.", "error")
+            return redirect(url_for("citizen_home"))
         return view(*args, **kwargs)
     return wrapped
 
@@ -152,9 +178,48 @@ def login():
             session["user_id"] = user["id"]
             session["user_name"] = user["name"]
             session["role"] = user["role"]
-            return redirect(request.args.get("next") or url_for("dashboard"))
+            session["zone"] = user["zone"]
+            default_next = url_for("citizen_home") if user["role"] == "citizen" else url_for("dashboard")
+            return redirect(request.args.get("next") or default_next)
         flash("Invalid email or password.", "error")
     return render_template("login.html")
+
+
+@app.route("/signup", methods=["GET", "POST"])
+def signup():
+    """Public self-service signup — always creates a 'citizen' role account.
+    There is no path from this form to admin/operator; those are only ever
+    created by seeding or directly in the database."""
+    if request.method == "POST":
+        name = request.form.get("name", "").strip()
+        email = request.form.get("email", "").strip().lower()
+        password = request.form.get("password", "")
+        zone = request.form.get("zone") or None
+
+        errors = []
+        if not name:
+            errors.append("Name is required.")
+        if not email or "@" not in email:
+            errors.append("A valid email is required.")
+        if len(password) < 8:
+            errors.append("Password must be at least 8 characters.")
+        if not errors and get_user_by_email(email):
+            errors.append("An account with that email already exists.")
+
+        if errors:
+            for e in errors:
+                flash(e, "error")
+            return render_template("signup.html", zones=get_zones(), name=name, email=email, zone=zone)
+
+        user_id = create_citizen(name, email, generate_password_hash(password), zone)
+        session["user_id"] = user_id
+        session["user_name"] = name
+        session["role"] = "citizen"
+        session["zone"] = zone
+        flash(f"Welcome, {name}. Your account is ready.", "success")
+        return redirect(url_for("citizen_home"))
+
+    return render_template("signup.html", zones=get_zones())
 
 
 @app.route("/logout")
@@ -164,37 +229,37 @@ def logout():
 
 
 @app.route("/dashboard")
-@login_required
+@staff_required
 def dashboard():
     return render_template("dashboard.html", zones=get_zones())
 
 
 @app.route("/predictions")
-@login_required
+@staff_required
 def predictions():
     return render_template("predictions.html", zones=get_zones())
 
 
 @app.route("/traffic")
-@login_required
+@staff_required
 def traffic():
     return render_template("traffic.html", zones=get_zones())
 
 
 @app.route("/hospitals")
-@login_required
+@staff_required
 def hospitals():
     return render_template("hospitals.html", zones=get_zones())
 
 
 @app.route("/rescue")
-@login_required
+@staff_required
 def rescue():
     return render_template("rescue.html", zones=get_zones())
 
 
 @app.route("/alerts")
-@login_required
+@staff_required
 def alerts():
     return render_template("alerts.html")
 
@@ -231,10 +296,52 @@ def admin_delete_zone(zone_id):
     return redirect(url_for("admin_zones"))
 
 
+# --------------------------------------------------------- citizen pages ---
+# Public-facing pages: any logged-in account can view these (not just the
+# 'citizen' role) — there's nothing sensitive here, just the same read-only
+# risk/route/hospital data the ops dashboard shows, presented simply.
+
+@app.route("/citizen")
+@login_required
+def citizen_home():
+    return render_template("citizen_home.html", zones=get_zones(), home_zone=session.get("zone"))
+
+
+@app.route("/citizen/evacuation")
+@login_required
+def citizen_evacuation():
+    return render_template("citizen_evacuation.html", zones=get_zones(), home_zone=session.get("zone"))
+
+
+@app.route("/citizen/hospitals")
+@login_required
+def citizen_hospitals():
+    return render_template("citizen_hospitals.html", zones=get_zones(), home_zone=session.get("zone"))
+
+
+@app.route("/citizen/chat")
+@login_required
+def citizen_chat():
+    return render_template("citizen_chat.html")
+
+
+@app.route("/api/citizen/chat", methods=["POST"])
+@login_required
+def api_citizen_chat():
+    body = request.get_json(silent=True) or {}
+    question = (body.get("question") or "").strip()
+    if not question:
+        return jsonify({"ok": False, "error": "question is required"}), 400
+    if len(question) > 500:
+        return jsonify({"ok": False, "error": "Keep questions under 500 characters."}), 400
+    result = chat_answer(question)
+    return jsonify({"ok": True, **result})
+
+
 # ------------------------------------------------------------- JSON API ----
 
 @app.route("/api/dashboard")
-@login_required
+@staff_required
 def api_dashboard():
     return jsonify(coordinator_agent.full_report())
 
@@ -246,7 +353,7 @@ def api_weather():
 
 
 @app.route("/api/traffic")
-@login_required
+@staff_required
 def api_traffic():
     weather_by_zone = {w["zone"]: w for w in weather_agent.assess_all_zones()}
     return jsonify(traffic_agent.assess_all_zones(weather_by_zone))
@@ -259,7 +366,7 @@ def api_hospitals():
 
 
 @app.route("/api/rescue")
-@login_required
+@staff_required
 def api_rescue():
     weather_assessments = weather_agent.assess_all_zones()
     return jsonify(
@@ -274,14 +381,14 @@ def api_rescue():
 
 
 @app.route("/api/alerts")
-@login_required
+@staff_required
 def api_alerts():
     rows = query("SELECT * FROM alerts ORDER BY id DESC LIMIT 50")
     return jsonify(rows)
 
 
 @app.route("/api/incidents")
-@login_required
+@staff_required
 def api_incidents():
     """Full disaster-event history, now that weather_agent actually writes
     to the `disasters` table on every assessment instead of that table
@@ -307,7 +414,7 @@ def api_zones():
 
 
 @app.route("/api/deploy", methods=["POST"])
-@login_required
+@staff_required
 def api_deploy():
     """Turns a Rescue Agent recommendation into a real state change: marks
     the nearest available team 'deployed' and reserves hospital beds.
@@ -332,7 +439,7 @@ def api_deploy():
 
 
 @app.route("/api/recall", methods=["POST"])
-@login_required
+@staff_required
 def api_recall():
     body = request.get_json(silent=True) or {}
     deployment_id = body.get("deployment_id")

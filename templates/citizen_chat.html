@@ -1,0 +1,31 @@
+{% extends "citizen_base.html" %}
+{% block title %}Ask Sentinel{% endblock %}
+
+{% block content %}
+<div class="citizen-hero">
+  <h1>Ask Sentinel</h1>
+  <p>Ask about risk, evacuation, or hospitals in plain language. Answers use the same live data as the rest of this site.</p>
+</div>
+
+<div class="big-card">
+  <div class="chat-suggestions">
+    <button class="chat-suggestion" data-q="What's the risk in my area?">What's the risk in my area?</button>
+    <button class="chat-suggestion" data-q="What's the safest evacuation route from Koramangala?">Evacuation route from Koramangala</button>
+    <button class="chat-suggestion" data-q="Nearest hospital to HSR Layout">Nearest hospital to HSR Layout</button>
+    <button class="chat-suggestion" data-q="Emergency contact numbers">Emergency contact numbers</button>
+  </div>
+
+  <div class="chat-window" id="chat-window">
+    <div class="chat-bubble bot">Hi! Ask me anything about current risk, evacuation routes, or hospital contacts.</div>
+  </div>
+
+  <div class="chat-input-row">
+    <input type="text" id="chat-input" class="input-lg" placeholder="Type your question…" maxlength="500">
+    <button class="btn btn-primary" id="chat-send">Send</button>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/citizen_chat.js') }}"></script>
+{% endblock %}

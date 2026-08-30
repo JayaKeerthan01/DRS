@@ -23,6 +23,9 @@ Changelog (hardening pass):
     hospitals.beds_available) instead of the same static suggestion forever.
   - `disasters` table is now actually written to (via log_disaster_event) —
     previously defined in the schema but nothing ever inserted into it.
+  - Added citizen-facing accounts: `users.zone` (home zone, nullable) and
+    `role='citizen'` as a valid, self-registerable role alongside the
+    seeded admin/operator accounts. See app.py::signup.
 """
 
 import sqlite3
@@ -153,6 +156,15 @@ def init_db(seed=True):
     )
     conn.commit()
 
+    # Lightweight migration for DBs created before `users.zone` existed.
+    # CREATE TABLE IF NOT EXISTS won't add columns to an already-existing
+    # table, so this covers upgrading an existing database file in place.
+    try:
+        cur.execute("ALTER TABLE users ADD COLUMN zone TEXT")
+        conn.commit()
+    except sqlite3.OperationalError:
+        pass  # column already exists
+
     if seed:
         _seed_demo_data(conn)
 
@@ -173,6 +185,11 @@ def _seed_demo_data(conn):
             "INSERT INTO users (name, email, password_hash, role) VALUES (?, ?, ?, ?)",
             ("Field Operator", "operator@disaster-response.local",
              generate_password_hash("operator123"), "operator"),
+        )
+        cur.execute(
+            "INSERT INTO users (name, email, password_hash, role, zone) VALUES (?, ?, ?, ?, ?)",
+            ("Resident", "resident@disaster-response.local",
+             generate_password_hash("resident123"), "citizen", "HSR Layout"),
         )
 
     cur.execute("SELECT COUNT(*) AS c FROM zones")
@@ -365,3 +382,19 @@ def count_recent_failed_attempts(ip_address, minutes=15):
         fetchone=True,
     )
     return row["c"] if row else 0
+
+
+# ------------------------------------------------------------ citizen ------
+
+def get_user_by_email(email):
+    return query("SELECT * FROM users WHERE email = ?", (email,), fetchone=True)
+
+
+def create_citizen(name, email, password_hash, zone=None):
+    """Public signup always creates role='citizen' — there is no way to
+    self-register as admin/operator through this function; those accounts
+    are only ever created by seeding or directly in the database."""
+    return query(
+        "INSERT INTO users (name, email, password_hash, role, zone) VALUES (?, ?, ?, 'citizen', ?)",
+        (name, email, password_hash, zone),
+    )

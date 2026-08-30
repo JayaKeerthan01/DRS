@@ -34,7 +34,11 @@
         DEMO CREDENTIALS<br>
         Admin — email: admin@disaster-response.local · password: admin123<br>
         Operator — email: operator@disaster-response.local · password: operator123<br>
-        <span style="color:var(--fog-400);">Admin can manage zones under /admin/zones; operator cannot.</span>
+        Resident — email: resident@disaster-response.local · password: resident123<br>
+        <span style="color:var(--fog-400);">Admin can manage zones under /admin/zones; operator cannot; residents only see the community portal.</span>
+      </div>
+      <div style="text-align:center; margin-top:16px; font-size:13px; color:var(--fog-300);">
+        Community member? <a href="{{ url_for('signup') }}" style="color:var(--signal-info);">Create a free account</a>
       </div>
     </div>
   </div>

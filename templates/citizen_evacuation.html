@@ -1,0 +1,24 @@
+{% extends "citizen_base.html" %}
+{% block title %}Evacuation Route{% endblock %}
+
+{% block content %}
+<div class="citizen-hero">
+  <h1>Find a safe way out</h1>
+  <p>Pick where you are, and we'll point you toward the nearest lower-risk area.</p>
+</div>
+
+<div class="big-card">
+  <label style="display:block; font-size:13px; color:var(--fog-300); margin-bottom:8px;">Your current area</label>
+  <select id="from-zone" class="select-lg" style="margin-bottom:14px;">
+    {% for z in zones %}
+      <option value="{{ z.name }}" {% if home_zone and z.name == home_zone %}selected{% endif %}>{{ z.name }}</option>
+    {% endfor %}
+  </select>
+  <button class="btn btn-primary" id="route-btn" style="width:100%; justify-content:center;">Find safest route</button>
+  <div id="route-result" style="margin-top:18px;"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/citizen_evacuation.js') }}"></script>
+{% endblock %}

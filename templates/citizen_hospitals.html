@@ -1,0 +1,19 @@
+{% extends "citizen_base.html" %}
+{% block title %}Hospitals{% endblock %}
+
+{% block content %}
+<div class="citizen-hero">
+  <h1>Hospitals &amp; emergency contacts</h1>
+  <p>Bed availability updates live. Tap a number to call.</p>
+</div>
+
+<div class="big-card">
+  <div id="hospital-list">
+    <div class="empty-state">Loading…</div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/citizen_hospitals.js') }}"></script>
+{% endblock %}

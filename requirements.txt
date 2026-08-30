@@ -19,3 +19,8 @@ requests>=2.31.0
 #
 # For real-time push instead of the current 15s polling, Flask-SocketIO +
 # eventlet/gevent is the natural next step (see README "Roadmap").
+#
+# anthropic>=0.40.0   # optional — only if ANTHROPIC_API_KEY is set, for the
+#                     # citizen chatbot's free-form mode. The rule-based
+#                     # matcher (agents/citizen_chat_agent.py) works fully
+#                     # without it — this is an upgrade, not a requirement.

@@ -535,7 +535,7 @@ tr:last-child td { border-bottom: none; }
 .login-card .sub { color: var(--fog-300); font-size: 13.5px; margin-bottom: 24px; }
 .field { margin-bottom: 16px; }
 .field label { display: block; font-size: 12.5px; color: var(--fog-300); margin-bottom: 6px; }
-.field input {
+.field input, .field select {
   width: 100%;
   background: var(--ink-850);
   border: 1px solid var(--line-600);
@@ -545,7 +545,7 @@ tr:last-child td { border-bottom: none; }
   font-size: 14px;
   font-family: var(--font-body);
 }
-.field input:focus { outline: 2px solid var(--signal-info); outline-offset: 1px; border-color: var(--signal-info); }
+.field input:focus, .field select:focus { outline: 2px solid var(--signal-info); outline-offset: 1px; border-color: var(--signal-info); }
 .hint-box {
   margin-top: 18px;
   padding: 12px;
@@ -574,4 +574,178 @@ tr:last-child td { border-bottom: none; }
   border-radius: var(--radius-sm);
   font-size: 13px;
   margin-bottom: 16px;
+}
+
+/* ---------------------------------- citizen portal ----------------------- */
+
+.citizen-shell { min-height: 100vh; }
+
+.citizen-topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 14px 28px;
+  border-bottom: 1px solid var(--line-700);
+  background: rgba(11, 18, 32, 0.85);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+.citizen-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+}
+.citizen-brand-sub { color: var(--fog-400); font-weight: 500; font-size: 13px; }
+
+.citizen-nav { display: flex; gap: 6px; flex-wrap: wrap; }
+.citizen-nav-link {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--fog-300);
+}
+.citizen-nav-link:hover { background: var(--ink-800); color: var(--signal-100); }
+.citizen-nav-link.active { background: var(--signal-info-dim); color: var(--signal-info); }
+
+.citizen-user { display: flex; align-items: center; gap: 14px; font-size: 13px; color: var(--fog-300); }
+
+.citizen-content { max-width: 880px; margin: 0 auto; padding: 32px 24px 60px; }
+
+.citizen-hero { margin-bottom: 28px; }
+.citizen-hero h1 { font-family: var(--font-display); font-size: 26px; font-weight: 600; margin: 0 0 6px; }
+.citizen-hero p { color: var(--fog-300); font-size: 15px; margin: 0; }
+
+.big-card {
+  background: var(--ink-900);
+  border: 1px solid var(--line-700);
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 16px;
+}
+
+.risk-card-lg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 1px solid var(--line-700);
+}
+.risk-card-lg.risk-low { background: var(--alert-nominal-dim); border-color: rgba(45,212,191,0.35); }
+.risk-card-lg.risk-medium { background: var(--alert-warning-dim); border-color: rgba(255,178,56,0.35); }
+.risk-card-lg.risk-high { background: var(--alert-critical-dim); border-color: rgba(255,84,112,0.35); }
+.risk-card-lg .zone-name { font-family: var(--font-display); font-size: 17px; font-weight: 600; }
+.risk-card-lg .zone-detail { font-size: 13px; color: var(--fog-300); margin-top: 2px; }
+.risk-card-lg .risk-word { font-family: var(--font-display); font-size: 20px; font-weight: 700; text-transform: uppercase; }
+.risk-card-lg.risk-low .risk-word { color: var(--alert-nominal); }
+.risk-card-lg.risk-medium .risk-word { color: var(--alert-warning); }
+.risk-card-lg.risk-high .risk-word { color: var(--alert-critical); }
+
+.select-lg, .input-lg {
+  width: 100%;
+  background: var(--ink-850);
+  border: 1px solid var(--line-600);
+  border-radius: var(--radius-sm);
+  padding: 13px 14px;
+  color: var(--signal-100);
+  font-size: 15px;
+  font-family: var(--font-body);
+}
+.select-lg:focus, .input-lg:focus { outline: 2px solid var(--signal-info); outline-offset: 1px; }
+
+.hospital-card-lg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  background: var(--ink-850);
+  border: 1px solid var(--line-700);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.hospital-card-lg .hospital-name { font-weight: 600; font-size: 15.5px; }
+.hospital-card-lg .hospital-meta { font-size: 13px; color: var(--fog-300); margin-top: 4px; }
+.call-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--alert-nominal);
+  color: var(--ink-950);
+  font-weight: 600;
+  font-size: 13.5px;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  border: none;
+  text-decoration: none;
+}
+.call-btn:hover { opacity: 0.9; }
+
+/* Chat */
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 320px;
+  max-height: 480px;
+  overflow-y: auto;
+  padding: 6px 2px 14px;
+}
+.chat-bubble {
+  max-width: 78%;
+  padding: 12px 15px;
+  border-radius: 14px;
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+.chat-bubble.user {
+  align-self: flex-end;
+  background: var(--signal-info);
+  color: var(--ink-950);
+  border-radius: 14px 14px 4px 14px;
+}
+.chat-bubble.bot {
+  align-self: flex-start;
+  background: var(--ink-850);
+  border: 1px solid var(--line-700);
+  border-radius: 14px 14px 14px 4px;
+}
+.chat-bubble.bot .chat-source {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--fog-400);
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.chat-input-row { display: flex; gap: 10px; margin-top: 6px; }
+.chat-suggestions { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.chat-suggestion {
+  background: var(--ink-850);
+  border: 1px solid var(--line-600);
+  color: var(--fog-300);
+  font-size: 12.5px;
+  padding: 7px 13px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.chat-suggestion:hover { border-color: var(--signal-info); color: var(--signal-info); }
+
+@media (max-width: 720px) {
+  .citizen-topnav { padding: 12px 16px; }
+  .citizen-content { padding: 20px 16px 48px; }
+  .risk-card-lg, .hospital-card-lg { flex-direction: column; align-items: flex-start; }
 }

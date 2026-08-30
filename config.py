@@ -52,6 +52,13 @@ class Config:
     OPENWEATHER_API_KEY = os.environ.get("OPENWEATHER_API_KEY", "")
     GOOGLE_MAPS_API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY", "")
 
+    # Optional: powers a more natural free-form citizen chatbot via Claude.
+    # Leave blank and the chatbot still works, using a zero-dependency
+    # keyword/intent matcher over the same live data instead — same
+    # simulate-by-default pattern as the two keys above.
+    ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+    ANTHROPIC_CHAT_MODEL = os.environ.get("ANTHROPIC_CHAT_MODEL", "claude-sonnet-4-6")
+
     # Default map center (HSR Layout, Bangalore) — change to your region
     DEFAULT_LAT = 12.9121
     DEFAULT_LON = 77.6446

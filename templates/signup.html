@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include "_head.html" %}
+</head>
+<body>
+  <div class="login-wrap">
+    <div class="login-card" style="max-width:420px;">
+      <h1>Create your account</h1>
+      <div class="sub">Free community access to live risk, evacuation, and hospital info.</div>
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="{{ 'flash-error' if category == 'error' else 'flash-success' }}">{{ message }}</div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+
+      <form method="POST" action="{{ url_for('signup') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autofocus value="{{ name or '' }}">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required value="{{ email or '' }}">
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters">
+        </div>
+        <div class="field">
+          <label for="zone">Your area (optional)</label>
+          <select id="zone" name="zone">
+            <option value="">Not sure / other</option>
+            {% for z in zones %}
+              <option value="{{ z.name }}" {% if zone and z.name == zone %}selected{% endif %}>{{ z.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Create account</button>
+      </form>
+
+      <div class="hint-box">
+        This creates a community account only — it can view risk levels,
+        evacuation routes, and hospital contacts. Response-team access is
+        provisioned separately by an administrator.
+      </div>
+      <div style="text-align:center; margin-top:16px; font-size:13px; color:var(--fog-300);">
+        Already have an account? <a href="{{ url_for('login') }}" style="color:var(--signal-info);">Sign in</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
