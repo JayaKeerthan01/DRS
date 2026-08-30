@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Rescue Ops{% endblock %}
+{% block page_title %}Rescue Coordination{% endblock %}
+{% block page_subtitle %}RESCUE AGENT · PRIORITY &amp; DEPLOYMENT ENGINE{% endblock %}
+
+{% block content %}
+<div class="grid grid-4" style="margin-bottom:18px;">
+  <div class="card">
+    <div class="card-eyebrow">Teams</div>
+    <div class="metric-value" id="r-teams">—</div>
+    <div class="metric-label">Available now</div>
+  </div>
+  <div class="card">
+    <div class="card-eyebrow">Ambulances</div>
+    <div class="metric-value" id="r-ambulances">—</div>
+    <div class="metric-label">Network-wide</div>
+  </div>
+  <div class="card">
+    <div class="card-eyebrow">Fire units</div>
+    <div class="metric-value" id="r-fire">—</div>
+    <div class="metric-label">Network-wide</div>
+  </div>
+  <div class="card">
+    <div class="card-eyebrow">Active deployments</div>
+    <div class="metric-value" id="r-deployments">—</div>
+    <div class="metric-label">Recommended right now</div>
+  </div>
+</div>
+
+<div class="grid grid-split" style="margin-bottom:18px;">
+  <div class="card">
+    <div class="section-title">Deployment recommendation</div>
+    <table>
+      <thead><tr><th>Zone</th><th>Team</th><th>Distance</th><th>Resources</th><th></th></tr></thead>
+      <tbody id="deployment-rows"><tr><td colspan="5" class="empty-state">Loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="section-title">Active deployments</div>
+    <table>
+      <thead><tr><th>Team</th><th>Zone</th><th>Since</th><th></th></tr></thead>
+      <tbody id="active-deployment-rows"><tr><td colspan="4" class="empty-state">Loading…</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="section-title">All rescue teams</div>
+  <table>
+    <thead><tr><th>Team</th><th>Zone</th><th>Status</th></tr></thead>
+    <tbody id="team-rows"><tr><td colspan="3" class="empty-state">Loading…</td></tr></tbody>
+  </table>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/rescue.js') }}"></script>
+{% endblock %}

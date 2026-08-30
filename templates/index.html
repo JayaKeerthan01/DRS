@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include "_head.html" %}
+</head>
+<body>
+  <nav class="public-nav">
+    <div class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L3 6.5V12C3 17 6.75 21.5 12 23C17.25 21.5 21 17 21 12V6.5L12 2Z" stroke="#0B1220" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M9 12l2 2 4-4" stroke="#0B1220" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <div class="brand-name">Sentinel Grid</div>
+        <div class="brand-sub">Response Command</div>
+      </div>
+    </div>
+    <a href="{{ url_for('login') }}" class="btn btn-ghost">Operator sign in</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-eyebrow"><span class="live-dot"></span> FIVE AGENTS, ONE COMMON OPERATING PICTURE</div>
+    <h1>Coordinated disaster response, before the first siren sounds.</h1>
+    <p>
+      Sentinel Grid links weather forecasting, road-network status, hospital capacity,
+      and rescue-team deployment into a single live decision layer — so agencies that
+      normally work in isolation can act on the same picture, in the same minute.
+    </p>
+    <div class="hero-actions">
+      <a href="{{ url_for('login') }}" class="btn btn-primary">Enter command dashboard →</a>
+    </div>
+  </section>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="f-icon" style="background: var(--signal-info-dim);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5EA8FF" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+      </div>
+      <h3>Weather Agent</h3>
+      <p>Reads live rainfall, wind, and humidity per zone and scores flood, cyclone, and landslide probability with a trained classifier.</p>
+    </div>
+    <div class="feature-card">
+      <div class="f-icon" style="background: var(--alert-warning-dim);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFB238" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      </div>
+      <h3>Traffic Agent</h3>
+      <p>Predicts congestion from time, location, and weather, flags blocked roads, and routes evacuations around them.</p>
+    </div>
+    <div class="feature-card">
+      <div class="f-icon" style="background: var(--alert-nominal-dim);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2DD4BF" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M12 8v8M8 12h8"/></svg>
+      </div>
+      <h3>Hospital Agent</h3>
+      <p>Tracks beds, ICU slots, doctors, and ambulances across every facility and ranks the best match for each affected zone.</p>
+    </div>
+    <div class="feature-card">
+      <div class="f-icon" style="background: var(--alert-critical-dim);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF5470" stroke-width="1.8"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>
+      </div>
+      <h3>Rescue Agent</h3>
+      <p>Prioritizes zones by severity and population density, then assigns the nearest available team automatically.</p>
+    </div>
+  </div>
+</body>
+</html>

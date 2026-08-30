@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Manage Zones{% endblock %}
+{% block page_title %}Zone Management{% endblock %}
+{% block page_subtitle %}ADMIN ONLY · CHANGES APPLY IMMEDIATELY, NO RESTART NEEDED{% endblock %}
+
+{% block content %}
+<div class="grid grid-split">
+  <div class="card">
+    <div class="section-title">Monitored zones ({{ zones|length }})</div>
+    <table>
+      <thead><tr><th>Name</th><th>Lat</th><th>Lon</th><th>Density</th><th></th></tr></thead>
+      <tbody>
+        {% for z in zones %}
+        <tr>
+          <td>{{ z.name }}</td>
+          <td class="mono">{{ "%.4f"|format(z.lat) }}</td>
+          <td class="mono">{{ "%.4f"|format(z.lon) }}</td>
+          <td class="mono">{{ "%.2f"|format(z.density) }}</td>
+          <td>
+            <form method="POST" action="{{ url_for('admin_delete_zone', zone_id=z.id) }}" onsubmit="return confirm('Remove {{ z.name }}? Every agent (weather, traffic, hospital, rescue) stops tracking it immediately.');">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <button type="submit" class="btn btn-ghost" style="padding:6px 12px; font-size:12.5px;">Remove</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+        {% if not zones %}
+        <tr><td colspan="5" class="empty-state">No zones configured — add one to start monitoring it.</td></tr>
+        {% endif %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="section-title">Add a zone</div>
+    <form method="POST" action="{{ url_for('admin_zones') }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <div class="field">
+        <label for="name">Zone name</label>
+        <input type="text" id="name" name="name" required placeholder="e.g. Whitefield">
+      </div>
+      <div class="field">
+        <label for="lat">Latitude</label>
+        <input type="number" step="0.0001" id="lat" name="lat" required placeholder="12.9698">
+      </div>
+      <div class="field">
+        <label for="lon">Longitude</label>
+        <input type="number" step="0.0001" id="lon" name="lon" required placeholder="77.7500">
+      </div>
+      <div class="field">
+        <label for="density">Population density weight (0–1)</label>
+        <input type="number" step="0.01" min="0" max="1" id="density" name="density" required placeholder="0.80">
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Add zone</button>
+    </form>
+    <div class="hint-box">
+      This writes directly to the <span class="mono">zones</span> table.
+      The Weather, Traffic, Hospital, and Rescue agents all read zones from
+      the database on every request, so a new zone appears on the dashboard
+      on its very next 15-second refresh — no restart required. Hospitals
+      and rescue teams aren't auto-created for a new zone; add those
+      directly in <span class="mono">database/db.py</span> or via your own
+      admin tooling.
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Alerts{% endblock %}
+{% block page_title %}Alert Log{% endblock %}
+{% block page_subtitle %}COORDINATOR AGENT · AUTO-GENERATED WHEN RISK TURNS HIGH{% endblock %}
+
+{% block content %}
+<div class="card" style="margin-bottom:18px;">
+  <div class="section-title">Recent alerts</div>
+  <div id="alerts-list">
+    <div class="empty-state">Loading…</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="section-title">Disaster event log</div>
+  <div class="metric-label" style="margin-bottom:12px;">
+    Every Weather Agent assessment, not just the ones that crossed into High
+    risk — this is the <span class="mono">disasters</span> table, which
+    previously existed in the schema but nothing ever wrote to it.
+  </div>
+  <table>
+    <thead><tr><th>Time</th><th>Zone</th><th>Type</th><th>Severity</th><th>Probability</th></tr></thead>
+    <tbody id="incident-rows"><tr><td colspan="5" class="empty-state">Loading…</td></tr></tbody>
+  </table>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/alerts.js') }}"></script>
+{% endblock %}

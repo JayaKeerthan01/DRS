@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Disaster Prediction{% endblock %}
+{% block page_title %}Disaster Prediction{% endblock %}
+{% block page_subtitle %}WEATHER AGENT · RANDOM FOREST CLASSIFIER{% endblock %}
+
+{% block content %}
+<div class="card" style="margin-bottom:18px;">
+  <div class="section-title">Model inputs → outputs</div>
+  <div class="grid grid-4" style="gap:14px;">
+    <div class="mono">IN&nbsp;&nbsp;rainfall_mm</div>
+    <div class="mono">IN&nbsp;&nbsp;temperature_c</div>
+    <div class="mono">IN&nbsp;&nbsp;humidity_pct</div>
+    <div class="mono">IN&nbsp;&nbsp;wind_speed_kmh</div>
+  </div>
+  <p style="color:var(--fog-300); font-size:13px; margin:14px 0 0;">
+    Outputs one of <b>Flood</b>, <b>Cyclone</b>, <b>Landslide</b>, or <b>None</b>, with a
+    calibrated probability for each class. Earthquake forecasting needs seismic sensor
+    input rather than weather data, so it isn't modeled by this agent — see the README
+    for how to wire in a seismic-network feed later.
+  </p>
+</div>
+
+<div class="grid grid-2" id="prediction-cards">
+  <div class="empty-state">Running inference…</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="{{ url_for('static', filename='js/predictions.js') }}"></script>
+{% endblock %}

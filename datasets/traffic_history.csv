@@ -1,0 +1,2001 @@
+hour,location,weather_condition,congestion_level
+22,BTM Layout,clear,Low
+15,Electronic City,clear,Low
+16,Koramangala,flood_alert,High
+21,Electronic City,rain,Low
+13,HSR Layout,rain,Low
+18,BTM Layout,clear,Moderate
+20,Koramangala,rain,Moderate
+5,Bellandur,rain,Moderate
+1,BTM Layout,clear,Low
+7,Koramangala,clear,Moderate
+6,HSR Layout,clear,Low
+20,Bellandur,rain,Moderate
+21,Electronic City,rain,Moderate
+0,Koramangala,rain,Low
+11,Bellandur,clear,Low
+19,HSR Layout,storm,Severe
+3,Koramangala,clear,Low
+19,HSR Layout,flood_alert,Severe
+2,HSR Layout,rain,Low
+11,Electronic City,clear,Low
+19,Electronic City,storm,High
+7,Electronic City,rain,High
+8,BTM Layout,rain,High
+6,HSR Layout,clear,Low
+17,Electronic City,rain,Moderate
+6,HSR Layout,clear,Low
+23,Koramangala,clear,Low
+10,Koramangala,clear,Low
+11,BTM Layout,clear,Moderate
+12,HSR Layout,clear,Low
+13,Electronic City,rain,Moderate
+13,HSR Layout,clear,Low
+12,Electronic City,clear,Low
+23,Bellandur,flood_alert,High
+19,Koramangala,clear,Moderate
+19,Bellandur,clear,Moderate
+16,HSR Layout,clear,Low
+14,Bellandur,clear,Low
+8,BTM Layout,clear,Moderate
+23,Koramangala,rain,Moderate
+11,Electronic City,clear,Low
+5,BTM Layout,storm,High
+20,Koramangala,flood_alert,Severe
+3,Koramangala,rain,Low
+20,BTM Layout,clear,Moderate
+14,Koramangala,clear,Low
+2,Electronic City,clear,Low
+1,Bellandur,clear,Low
+10,BTM Layout,storm,Moderate
+0,Electronic City,clear,Low
+3,Electronic City,rain,Low
+12,Koramangala,rain,Low
+23,Bellandur,clear,Low
+11,BTM Layout,clear,Low
+19,Bellandur,rain,High
+22,Koramangala,rain,Moderate
+19,BTM Layout,clear,Moderate
+15,Electronic City,storm,High
+10,Bellandur,clear,Low
+12,Koramangala,clear,Low
+6,BTM Layout,clear,Low
+11,Bellandur,rain,Low
+9,Koramangala,clear,Moderate
+5,Electronic City,clear,Low
+23,BTM Layout,rain,Moderate
+0,BTM Layout,clear,Low
+2,Electronic City,rain,Moderate
+4,HSR Layout,rain,Moderate
+23,Electronic City,rain,Moderate
+16,HSR Layout,clear,Low
+21,HSR Layout,rain,Moderate
+4,Electronic City,clear,Moderate
+17,Koramangala,clear,Low
+8,HSR Layout,clear,Moderate
+11,BTM Layout,clear,Low
+0,Koramangala,clear,Low
+14,Bellandur,rain,Low
+19,Electronic City,rain,Moderate
+15,Bellandur,clear,Low
+3,HSR Layout,clear,Low
+12,BTM Layout,clear,Low
+6,HSR Layout,clear,Low
+23,Koramangala,rain,Moderate
+21,Koramangala,flood_alert,High
+4,Electronic City,clear,Low
+12,HSR Layout,storm,Moderate
+22,Bellandur,flood_alert,High
+20,Bellandur,clear,Moderate
+16,Bellandur,rain,Moderate
+15,Bellandur,storm,Moderate
+1,HSR Layout,rain,Moderate
+17,Koramangala,clear,Moderate
+11,Bellandur,rain,Low
+2,HSR Layout,storm,Moderate
+5,Electronic City,clear,Low
+12,Electronic City,clear,Low
+17,Bellandur,clear,Moderate
+12,Electronic City,storm,Moderate
+14,Bellandur,rain,Moderate
+20,Bellandur,clear,Moderate
+16,Bellandur,rain,Moderate
+8,HSR Layout,rain,Moderate
+15,HSR Layout,clear,Low
+14,Bellandur,clear,Low
+2,HSR Layout,rain,Low
+1,BTM Layout,clear,Low
+15,Koramangala,clear,Low
+9,Bellandur,flood_alert,Severe
+14,Electronic City,rain,Low
+7,Electronic City,clear,Moderate
+5,Bellandur,clear,Low
+3,Koramangala,clear,Low
+9,Electronic City,storm,Severe
+19,Bellandur,rain,High
+9,BTM Layout,storm,Severe
+9,HSR Layout,rain,High
+13,BTM Layout,rain,Low
+23,Bellandur,clear,Low
+9,Koramangala,rain,Moderate
+14,BTM Layout,clear,Low
+10,Bellandur,clear,Low
+14,BTM Layout,clear,Low
+10,Electronic City,rain,Moderate
+15,Koramangala,clear,Low
+13,Electronic City,clear,Low
+16,Electronic City,clear,Low
+22,Bellandur,clear,Low
+3,BTM Layout,storm,Moderate
+13,BTM Layout,rain,Low
+10,Bellandur,rain,Moderate
+8,Electronic City,clear,Moderate
+5,Bellandur,clear,Low
+1,Electronic City,clear,Low
+9,BTM Layout,storm,Severe
+19,Bellandur,clear,Moderate
+2,HSR Layout,rain,Moderate
+9,Electronic City,clear,Moderate
+23,BTM Layout,clear,Low
+22,Bellandur,rain,Moderate
+5,BTM Layout,clear,Moderate
+0,Electronic City,clear,Low
+16,Bellandur,clear,Low
+0,Koramangala,rain,Moderate
+7,Electronic City,clear,Moderate
+11,BTM Layout,rain,Moderate
+20,Bellandur,clear,Moderate
+2,HSR Layout,rain,Low
+15,Bellandur,clear,Low
+12,Electronic City,clear,Low
+3,Koramangala,flood_alert,High
+20,Electronic City,rain,High
+20,Electronic City,rain,Moderate
+11,Electronic City,clear,Low
+22,Koramangala,storm,High
+14,BTM Layout,clear,Low
+21,BTM Layout,flood_alert,High
+23,Electronic City,storm,Moderate
+13,Bellandur,rain,Moderate
+6,BTM Layout,storm,Moderate
+3,Electronic City,clear,Low
+13,Electronic City,rain,Low
+4,Electronic City,clear,Low
+18,HSR Layout,flood_alert,Severe
+22,HSR Layout,storm,Moderate
+5,HSR Layout,clear,Low
+13,Electronic City,clear,Low
+1,Bellandur,rain,Low
+4,BTM Layout,rain,Low
+9,Bellandur,clear,Moderate
+21,HSR Layout,flood_alert,Severe
+23,Electronic City,clear,Low
+15,Bellandur,flood_alert,Severe
+14,Koramangala,rain,Moderate
+13,HSR Layout,clear,Low
+1,HSR Layout,clear,Low
+9,Bellandur,clear,Moderate
+23,BTM Layout,clear,Low
+9,HSR Layout,rain,High
+5,Bellandur,rain,Moderate
+5,Koramangala,storm,High
+17,BTM Layout,clear,High
+0,Koramangala,flood_alert,Severe
+23,Electronic City,clear,Low
+21,BTM Layout,flood_alert,Severe
+13,HSR Layout,storm,Moderate
+11,Electronic City,clear,Low
+18,BTM Layout,storm,High
+13,Electronic City,rain,Low
+11,Electronic City,rain,Moderate
+7,Koramangala,storm,High
+10,BTM Layout,clear,Moderate
+18,Bellandur,clear,Moderate
+1,Bellandur,clear,Low
+0,HSR Layout,storm,Moderate
+17,Electronic City,storm,Severe
+8,Koramangala,clear,Moderate
+19,HSR Layout,rain,Moderate
+0,Electronic City,clear,Low
+21,Bellandur,clear,Low
+2,HSR Layout,clear,Low
+9,Bellandur,rain,High
+23,Electronic City,clear,Low
+2,BTM Layout,clear,Low
+15,BTM Layout,clear,Low
+17,Koramangala,clear,Low
+10,Koramangala,rain,Moderate
+1,Koramangala,clear,Low
+12,BTM Layout,clear,Low
+10,Electronic City,rain,Moderate
+20,Koramangala,clear,Moderate
+16,Koramangala,clear,Low
+8,Electronic City,storm,High
+1,Electronic City,flood_alert,Severe
+14,HSR Layout,storm,Moderate
+6,Koramangala,clear,Low
+16,HSR Layout,rain,Moderate
+20,Koramangala,clear,Moderate
+8,BTM Layout,clear,High
+21,Bellandur,clear,Low
+12,Bellandur,flood_alert,Severe
+12,Koramangala,storm,Moderate
+18,HSR Layout,clear,Moderate
+18,BTM Layout,clear,Moderate
+21,Bellandur,storm,Moderate
+23,HSR Layout,flood_alert,High
+3,Koramangala,clear,Low
+9,BTM Layout,clear,Moderate
+22,Bellandur,clear,Low
+7,BTM Layout,rain,High
+0,BTM Layout,clear,Low
+13,HSR Layout,clear,Low
+18,Electronic City,clear,Moderate
+17,Bellandur,clear,Moderate
+19,HSR Layout,clear,Moderate
+15,Electronic City,clear,Low
+3,Bellandur,flood_alert,Severe
+20,Koramangala,clear,Moderate
+10,Electronic City,rain,Moderate
+20,HSR Layout,rain,Moderate
+19,Bellandur,clear,Moderate
+23,HSR Layout,rain,Moderate
+0,BTM Layout,clear,Low
+20,BTM Layout,rain,High
+15,HSR Layout,rain,Low
+11,Koramangala,rain,Low
+19,Electronic City,clear,Low
+22,Koramangala,flood_alert,High
+12,Bellandur,storm,Moderate
+2,Bellandur,rain,Moderate
+17,Electronic City,rain,High
+5,BTM Layout,clear,Low
+5,BTM Layout,flood_alert,High
+4,HSR Layout,rain,Low
+4,Electronic City,storm,Moderate
+21,Bellandur,clear,Moderate
+8,HSR Layout,flood_alert,High
+2,HSR Layout,clear,Low
+4,BTM Layout,clear,Low
+9,Electronic City,clear,Moderate
+8,HSR Layout,clear,Moderate
+7,Koramangala,rain,High
+22,Koramangala,clear,Low
+20,Electronic City,clear,Moderate
+13,Koramangala,clear,Low
+23,BTM Layout,storm,High
+8,Bellandur,clear,Moderate
+3,Bellandur,clear,Low
+6,BTM Layout,storm,High
+2,Koramangala,rain,Low
+22,Electronic City,rain,Low
+5,Electronic City,flood_alert,High
+10,HSR Layout,clear,Moderate
+4,Bellandur,rain,Moderate
+23,HSR Layout,rain,Moderate
+3,Bellandur,rain,High
+12,Koramangala,rain,Low
+22,Electronic City,clear,Low
+12,Electronic City,clear,Low
+21,Koramangala,rain,Moderate
+21,Bellandur,rain,Moderate
+18,Koramangala,clear,Moderate
+17,Bellandur,clear,Low
+13,Electronic City,clear,Low
+13,BTM Layout,clear,Low
+19,HSR Layout,rain,High
+10,BTM Layout,clear,Low
+22,BTM Layout,storm,High
+21,Koramangala,clear,Low
+8,BTM Layout,clear,Moderate
+9,HSR Layout,clear,Moderate
+17,HSR Layout,rain,High
+22,Bellandur,rain,Moderate
+2,Bellandur,clear,Low
+1,Electronic City,flood_alert,High
+5,Electronic City,rain,Low
+10,Bellandur,clear,Low
+3,Bellandur,storm,High
+12,HSR Layout,clear,Low
+12,HSR Layout,flood_alert,Moderate
+22,Bellandur,clear,Low
+17,Bellandur,flood_alert,High
+6,Koramangala,clear,Low
+18,Bellandur,rain,High
+19,Bellandur,clear,Moderate
+16,Koramangala,clear,Low
+16,Bellandur,rain,Moderate
+7,HSR Layout,clear,Moderate
+17,Electronic City,clear,Moderate
+3,Bellandur,clear,Low
+15,Koramangala,rain,Moderate
+22,Bellandur,clear,Low
+23,Bellandur,clear,Low
+7,Koramangala,clear,Moderate
+7,BTM Layout,clear,Moderate
+14,Electronic City,flood_alert,High
+9,Electronic City,clear,Moderate
+17,HSR Layout,rain,Moderate
+4,BTM Layout,rain,Moderate
+4,BTM Layout,storm,Moderate
+1,Bellandur,clear,Low
+11,BTM Layout,clear,Low
+5,Electronic City,clear,Low
+7,HSR Layout,clear,Low
+21,Bellandur,clear,Low
+19,HSR Layout,storm,Severe
+20,Electronic City,rain,High
+14,Bellandur,clear,Low
+2,Koramangala,clear,Low
+17,HSR Layout,rain,High
+14,HSR Layout,clear,Low
+21,Koramangala,clear,Low
+11,Electronic City,flood_alert,High
+4,Electronic City,flood_alert,High
+14,Koramangala,flood_alert,High
+10,Koramangala,storm,Moderate
+15,Electronic City,clear,Low
+9,HSR Layout,clear,Low
+7,BTM Layout,rain,Moderate
+3,Bellandur,clear,Low
+23,Bellandur,rain,Moderate
+18,Electronic City,clear,Moderate
+11,HSR Layout,clear,Low
+5,Koramangala,rain,Low
+15,BTM Layout,clear,Low
+9,Koramangala,rain,Moderate
+15,HSR Layout,rain,Moderate
+2,Bellandur,storm,Moderate
+4,Electronic City,rain,Moderate
+17,BTM Layout,storm,Severe
+1,Electronic City,rain,Low
+16,Koramangala,flood_alert,High
+9,Koramangala,storm,Severe
+0,HSR Layout,clear,Low
+18,HSR Layout,clear,Low
+16,Koramangala,clear,Low
+19,Electronic City,clear,Moderate
+21,BTM Layout,clear,Low
+17,Bellandur,storm,High
+20,Bellandur,clear,Moderate
+2,HSR Layout,clear,Low
+22,Bellandur,rain,Moderate
+21,Bellandur,clear,Low
+16,BTM Layout,clear,Low
+19,Koramangala,flood_alert,Severe
+17,Electronic City,rain,High
+21,Bellandur,clear,Low
+21,HSR Layout,clear,Low
+12,BTM Layout,clear,Low
+19,BTM Layout,flood_alert,Severe
+21,Electronic City,rain,Moderate
+7,Bellandur,clear,Moderate
+1,Electronic City,rain,Moderate
+4,Koramangala,clear,Low
+0,HSR Layout,rain,Low
+10,BTM Layout,clear,Low
+0,Bellandur,clear,Low
+6,BTM Layout,clear,Low
+6,Bellandur,clear,Low
+16,BTM Layout,storm,High
+5,Electronic City,storm,Moderate
+22,Electronic City,rain,Moderate
+4,HSR Layout,rain,Low
+23,Electronic City,clear,Low
+13,Bellandur,clear,Low
+5,Koramangala,storm,High
+0,Electronic City,flood_alert,High
+7,HSR Layout,clear,Moderate
+14,Koramangala,rain,Moderate
+2,Electronic City,flood_alert,High
+3,Koramangala,flood_alert,High
+2,Electronic City,clear,Low
+16,Bellandur,rain,Moderate
+2,Bellandur,clear,Low
+0,Koramangala,clear,Low
+10,HSR Layout,clear,Low
+7,Electronic City,clear,Moderate
+13,HSR Layout,clear,Low
+22,HSR Layout,rain,Moderate
+20,HSR Layout,rain,Moderate
+12,Koramangala,storm,Moderate
+15,BTM Layout,clear,Low
+19,HSR Layout,clear,Moderate
+10,HSR Layout,rain,Moderate
+15,BTM Layout,flood_alert,High
+5,HSR Layout,clear,Low
+14,Koramangala,clear,Low
+5,Electronic City,rain,Low
+4,Electronic City,flood_alert,High
+18,Bellandur,storm,Severe
+13,Electronic City,storm,High
+9,Electronic City,clear,Moderate
+0,Electronic City,clear,Low
+5,Koramangala,storm,Moderate
+19,Koramangala,rain,High
+11,BTM Layout,storm,Moderate
+23,HSR Layout,clear,Low
+21,Koramangala,clear,Low
+20,Koramangala,clear,Moderate
+0,Electronic City,storm,Moderate
+1,Electronic City,storm,High
+13,Koramangala,clear,Low
+8,BTM Layout,storm,Severe
+20,Bellandur,clear,Low
+7,HSR Layout,clear,Low
+3,Koramangala,rain,Low
+2,BTM Layout,clear,Low
+7,BTM Layout,clear,Moderate
+15,Electronic City,clear,Low
+3,BTM Layout,clear,Low
+19,Electronic City,clear,Moderate
+7,Bellandur,clear,Moderate
+7,BTM Layout,rain,Moderate
+15,BTM Layout,clear,Low
+20,Electronic City,clear,Low
+10,Electronic City,rain,Moderate
+19,Electronic City,clear,Low
+7,Electronic City,clear,Moderate
+3,Koramangala,rain,Moderate
+19,Electronic City,rain,High
+18,HSR Layout,storm,High
+18,Koramangala,rain,Moderate
+21,BTM Layout,clear,Low
+11,BTM Layout,storm,High
+4,HSR Layout,clear,Low
+14,BTM Layout,rain,Moderate
+13,Koramangala,clear,Low
+9,BTM Layout,clear,Moderate
+15,Electronic City,rain,Moderate
+6,Koramangala,rain,Moderate
+14,Bellandur,storm,High
+19,HSR Layout,clear,Low
+2,Bellandur,storm,High
+10,Electronic City,rain,Moderate
+15,Electronic City,rain,Low
+1,BTM Layout,storm,High
+15,Koramangala,clear,Low
+21,Koramangala,storm,Moderate
+19,Electronic City,storm,Severe
+16,BTM Layout,storm,Moderate
+19,Electronic City,clear,Low
+8,Koramangala,clear,Low
+7,Koramangala,clear,Low
+2,Electronic City,rain,Moderate
+17,Koramangala,storm,Severe
+7,BTM Layout,clear,Moderate
+20,HSR Layout,rain,High
+11,HSR Layout,rain,Moderate
+21,Electronic City,clear,Low
+3,Koramangala,storm,Moderate
+3,HSR Layout,clear,Low
+8,Koramangala,clear,Moderate
+0,HSR Layout,clear,Low
+11,BTM Layout,rain,Moderate
+15,Electronic City,clear,Low
+15,HSR Layout,clear,Low
+5,Bellandur,clear,Low
+3,Koramangala,rain,Moderate
+13,BTM Layout,clear,Low
+15,BTM Layout,storm,Moderate
+22,BTM Layout,rain,Low
+21,HSR Layout,rain,Moderate
+9,HSR Layout,clear,Moderate
+3,Electronic City,clear,Low
+6,HSR Layout,storm,High
+21,Bellandur,flood_alert,High
+10,Bellandur,rain,Moderate
+23,Koramangala,flood_alert,High
+15,HSR Layout,rain,Moderate
+14,HSR Layout,rain,Moderate
+2,Bellandur,clear,Low
+14,HSR Layout,clear,Low
+9,BTM Layout,clear,Moderate
+20,Electronic City,clear,Moderate
+3,BTM Layout,clear,Low
+4,Electronic City,clear,Low
+15,BTM Layout,clear,Low
+16,BTM Layout,clear,Low
+19,HSR Layout,clear,Moderate
+12,Bellandur,rain,Moderate
+9,Koramangala,storm,Severe
+7,HSR Layout,rain,High
+8,Electronic City,rain,Moderate
+15,Electronic City,rain,Moderate
+12,HSR Layout,clear,Low
+7,Electronic City,clear,Low
+5,Bellandur,storm,High
+17,BTM Layout,flood_alert,Severe
+5,HSR Layout,clear,Low
+5,Electronic City,clear,Low
+7,Electronic City,flood_alert,Severe
+20,BTM Layout,storm,Severe
+10,HSR Layout,rain,Moderate
+14,Bellandur,storm,High
+1,Bellandur,rain,Low
+8,Koramangala,storm,High
+18,Bellandur,clear,Moderate
+18,BTM Layout,clear,Moderate
+13,BTM Layout,rain,Moderate
+21,Koramangala,clear,Low
+7,Electronic City,rain,High
+3,Bellandur,clear,Low
+1,BTM Layout,rain,Moderate
+4,Electronic City,storm,Moderate
+18,Koramangala,clear,High
+21,Electronic City,flood_alert,High
+3,HSR Layout,rain,Moderate
+12,Koramangala,rain,Moderate
+3,BTM Layout,clear,Low
+20,BTM Layout,clear,Moderate
+3,Electronic City,rain,Low
+15,Bellandur,flood_alert,High
+1,HSR Layout,rain,Moderate
+17,Bellandur,storm,Severe
+21,BTM Layout,clear,Low
+17,HSR Layout,storm,High
+6,HSR Layout,storm,High
+20,Bellandur,rain,High
+7,Bellandur,clear,Moderate
+18,Bellandur,rain,Severe
+19,Bellandur,clear,Low
+11,BTM Layout,rain,Low
+14,BTM Layout,rain,Moderate
+20,Bellandur,clear,Low
+4,Electronic City,clear,Low
+0,Bellandur,clear,Low
+10,BTM Layout,clear,Low
+4,BTM Layout,storm,Moderate
+21,Koramangala,clear,Low
+20,BTM Layout,clear,Low
+9,BTM Layout,clear,Low
+7,Bellandur,clear,Moderate
+17,Bellandur,rain,Severe
+10,Bellandur,storm,High
+2,Bellandur,storm,High
+15,BTM Layout,flood_alert,High
+17,Koramangala,storm,High
+1,HSR Layout,clear,Low
+18,Bellandur,clear,Moderate
+12,Electronic City,flood_alert,High
+19,Koramangala,clear,Moderate
+20,Koramangala,rain,High
+16,Koramangala,clear,Low
+8,Electronic City,storm,High
+8,HSR Layout,clear,Moderate
+17,Bellandur,clear,Low
+1,Bellandur,clear,Low
+5,Bellandur,storm,Moderate
+12,Koramangala,rain,Low
+22,BTM Layout,rain,Moderate
+18,Electronic City,clear,Moderate
+19,Bellandur,clear,Moderate
+4,Electronic City,storm,Moderate
+6,HSR Layout,rain,Moderate
+6,Koramangala,rain,Moderate
+17,Electronic City,flood_alert,High
+12,BTM Layout,rain,Moderate
+5,HSR Layout,clear,Low
+17,Electronic City,rain,Moderate
+15,Electronic City,clear,Low
+21,Koramangala,clear,Low
+13,HSR Layout,clear,Low
+3,Bellandur,rain,Moderate
+21,Bellandur,flood_alert,Moderate
+4,Bellandur,storm,Moderate
+1,BTM Layout,clear,Moderate
+19,BTM Layout,storm,Severe
+10,BTM Layout,storm,High
+15,Electronic City,rain,Moderate
+3,BTM Layout,rain,Low
+17,HSR Layout,storm,High
+9,HSR Layout,clear,Moderate
+23,Electronic City,clear,Low
+15,Electronic City,clear,Low
+22,BTM Layout,rain,Moderate
+19,Koramangala,clear,Moderate
+20,BTM Layout,clear,Low
+2,HSR Layout,clear,Low
+18,BTM Layout,clear,Moderate
+14,Koramangala,clear,Moderate
+9,Electronic City,clear,Moderate
+7,BTM Layout,rain,High
+15,Koramangala,clear,Low
+4,BTM Layout,clear,Low
+4,BTM Layout,flood_alert,Moderate
+20,Koramangala,rain,High
+18,Koramangala,storm,High
+14,Koramangala,rain,High
+18,Bellandur,flood_alert,Severe
+7,Koramangala,clear,Moderate
+17,BTM Layout,clear,Low
+4,Bellandur,flood_alert,Severe
+10,Koramangala,clear,Low
+3,BTM Layout,flood_alert,High
+9,HSR Layout,clear,Low
+8,Electronic City,clear,Moderate
+10,BTM Layout,storm,High
+11,HSR Layout,clear,Low
+0,Electronic City,clear,Low
+8,Koramangala,flood_alert,Severe
+20,BTM Layout,clear,Moderate
+10,Koramangala,flood_alert,High
+13,Koramangala,clear,Low
+2,HSR Layout,clear,Low
+9,BTM Layout,clear,Moderate
+23,Bellandur,clear,Low
+13,HSR Layout,clear,Low
+0,Koramangala,storm,Moderate
+17,BTM Layout,clear,Moderate
+18,BTM Layout,clear,Moderate
+9,Bellandur,clear,Low
+0,HSR Layout,rain,Moderate
+19,BTM Layout,rain,Moderate
+6,Koramangala,clear,Low
+22,Bellandur,rain,Moderate
+8,Bellandur,rain,High
+9,Koramangala,clear,Moderate
+19,Electronic City,clear,Moderate
+3,BTM Layout,flood_alert,Severe
+0,HSR Layout,clear,Low
+18,Bellandur,flood_alert,Severe
+22,HSR Layout,clear,Low
+23,BTM Layout,clear,Low
+3,Koramangala,clear,Low
+3,Koramangala,clear,Low
+8,Koramangala,clear,Moderate
+17,HSR Layout,clear,Moderate
+21,HSR Layout,clear,Low
+19,Bellandur,clear,Moderate
+8,BTM Layout,clear,Moderate
+22,BTM Layout,clear,Low
+6,Koramangala,clear,Low
+2,Electronic City,flood_alert,Severe
+10,BTM Layout,clear,Low
+2,Electronic City,rain,Moderate
+16,HSR Layout,clear,Low
+23,HSR Layout,rain,High
+2,HSR Layout,clear,Low
+2,BTM Layout,clear,Low
+4,Koramangala,clear,Low
+4,Koramangala,storm,Moderate
+12,Bellandur,clear,Low
+13,BTM Layout,clear,Low
+22,Bellandur,clear,Low
+10,Koramangala,storm,Moderate
+22,Koramangala,clear,Moderate
+18,Koramangala,clear,Low
+20,Koramangala,rain,Moderate
+4,Bellandur,storm,High
+10,Koramangala,rain,Low
+21,Bellandur,clear,Low
+18,BTM Layout,clear,Moderate
+5,BTM Layout,clear,Low
+20,HSR Layout,clear,High
+18,BTM Layout,flood_alert,Severe
+3,Koramangala,clear,Low
+1,BTM Layout,clear,Low
+6,Electronic City,storm,Moderate
+11,Koramangala,flood_alert,High
+3,HSR Layout,storm,Moderate
+0,BTM Layout,clear,Low
+2,Koramangala,clear,Low
+7,Koramangala,clear,Low
+9,BTM Layout,rain,Moderate
+7,BTM Layout,storm,High
+10,HSR Layout,flood_alert,Severe
+17,Bellandur,storm,High
+5,Koramangala,clear,Low
+10,Bellandur,rain,Low
+17,BTM Layout,clear,Moderate
+1,HSR Layout,clear,Low
+22,HSR Layout,clear,Low
+23,Bellandur,clear,Low
+6,Electronic City,clear,Low
+21,Koramangala,clear,Low
+6,HSR Layout,clear,Low
+21,Koramangala,rain,Moderate
+15,Koramangala,clear,Low
+5,HSR Layout,clear,Low
+1,Electronic City,rain,Moderate
+9,BTM Layout,rain,High
+17,BTM Layout,rain,High
+5,Electronic City,rain,Moderate
+12,BTM Layout,rain,Low
+2,Koramangala,rain,Moderate
+10,HSR Layout,rain,Moderate
+0,HSR Layout,clear,Low
+23,Koramangala,clear,Moderate
+12,BTM Layout,rain,Low
+20,BTM Layout,clear,Moderate
+2,HSR Layout,clear,Low
+4,Koramangala,clear,Low
+4,Electronic City,clear,Low
+13,Koramangala,storm,High
+20,HSR Layout,rain,High
+14,Koramangala,clear,Low
+11,Koramangala,clear,Low
+22,Bellandur,storm,Moderate
+4,Bellandur,rain,Low
+3,HSR Layout,clear,Low
+16,HSR Layout,storm,Moderate
+20,Koramangala,rain,Moderate
+6,Koramangala,flood_alert,High
+6,Electronic City,rain,Low
+12,Koramangala,storm,Moderate
+18,Koramangala,rain,High
+6,BTM Layout,rain,Moderate
+19,Koramangala,storm,High
+12,Electronic City,clear,Low
+16,Bellandur,clear,Low
+15,Koramangala,rain,Moderate
+11,BTM Layout,clear,Low
+12,BTM Layout,rain,Moderate
+23,BTM Layout,rain,Low
+9,HSR Layout,flood_alert,Severe
+22,Koramangala,clear,Low
+18,Bellandur,clear,Moderate
+4,Koramangala,storm,Moderate
+20,Bellandur,clear,Moderate
+9,Koramangala,storm,Severe
+4,Koramangala,clear,Low
+6,Bellandur,clear,Low
+3,Electronic City,clear,Low
+8,Koramangala,clear,Moderate
+2,BTM Layout,clear,Low
+13,Electronic City,clear,Moderate
+23,HSR Layout,storm,High
+23,Electronic City,flood_alert,High
+22,Koramangala,clear,Low
+5,HSR Layout,clear,Low
+5,Electronic City,clear,Low
+16,HSR Layout,flood_alert,High
+23,Electronic City,clear,Low
+19,Koramangala,rain,Moderate
+4,BTM Layout,clear,Low
+17,Koramangala,clear,Moderate
+12,Electronic City,clear,Low
+10,BTM Layout,rain,Low
+11,Electronic City,clear,Low
+13,BTM Layout,storm,Moderate
+21,BTM Layout,rain,Moderate
+19,Electronic City,clear,Moderate
+0,BTM Layout,clear,Low
+18,Koramangala,rain,High
+7,Koramangala,rain,Moderate
+8,BTM Layout,clear,Moderate
+14,Koramangala,clear,Low
+23,BTM Layout,clear,Low
+1,BTM Layout,storm,High
+12,HSR Layout,clear,Low
+5,Electronic City,storm,Moderate
+21,Electronic City,rain,Low
+11,Koramangala,rain,Moderate
+20,Koramangala,clear,High
+21,Koramangala,rain,Low
+2,Electronic City,clear,Low
+18,HSR Layout,rain,High
+18,HSR Layout,clear,Moderate
+19,BTM Layout,clear,Low
+23,Bellandur,storm,High
+18,Bellandur,clear,Moderate
+20,Electronic City,storm,Severe
+16,BTM Layout,flood_alert,High
+7,HSR Layout,rain,High
+20,Koramangala,clear,Moderate
+16,Koramangala,rain,Moderate
+16,BTM Layout,rain,Moderate
+23,Bellandur,clear,Low
+17,BTM Layout,storm,Severe
+8,Koramangala,clear,Low
+7,Bellandur,clear,Moderate
+7,Koramangala,clear,Low
+4,HSR Layout,clear,Low
+1,Koramangala,rain,Low
+18,Bellandur,storm,High
+18,BTM Layout,clear,Moderate
+3,BTM Layout,clear,Low
+9,BTM Layout,rain,High
+22,HSR Layout,clear,Low
+20,Bellandur,clear,Moderate
+14,HSR Layout,storm,Moderate
+23,HSR Layout,storm,Moderate
+7,Bellandur,flood_alert,Severe
+20,BTM Layout,rain,High
+22,Koramangala,clear,Low
+14,HSR Layout,clear,Low
+3,Electronic City,rain,Low
+7,Bellandur,flood_alert,Severe
+12,Electronic City,clear,Low
+6,HSR Layout,clear,Low
+2,Electronic City,clear,Low
+4,Electronic City,clear,Low
+23,Electronic City,clear,Low
+9,HSR Layout,clear,Moderate
+13,BTM Layout,clear,Low
+10,Bellandur,clear,Low
+19,HSR Layout,rain,Moderate
+2,Electronic City,clear,Low
+6,Electronic City,rain,Moderate
+14,Electronic City,rain,Low
+19,BTM Layout,flood_alert,Severe
+11,HSR Layout,clear,Low
+16,BTM Layout,storm,Moderate
+19,Bellandur,clear,Moderate
+15,BTM Layout,rain,Moderate
+19,Bellandur,storm,High
+22,Electronic City,clear,Low
+5,Bellandur,clear,Low
+10,Koramangala,rain,Low
+5,BTM Layout,clear,Low
+9,BTM Layout,clear,Moderate
+0,Koramangala,clear,Low
+16,Bellandur,clear,Low
+5,BTM Layout,rain,Moderate
+20,Koramangala,flood_alert,Severe
+17,HSR Layout,flood_alert,Severe
+8,Koramangala,clear,Moderate
+10,Electronic City,clear,Low
+16,HSR Layout,clear,Low
+10,Koramangala,clear,Low
+5,Bellandur,clear,Low
+1,BTM Layout,rain,Moderate
+13,Koramangala,rain,Moderate
+12,Electronic City,rain,Moderate
+18,Bellandur,rain,High
+3,Bellandur,rain,Moderate
+1,Electronic City,rain,Moderate
+17,Bellandur,flood_alert,Severe
+17,BTM Layout,flood_alert,Severe
+19,Koramangala,flood_alert,Severe
+0,BTM Layout,storm,High
+15,Bellandur,clear,Low
+23,Electronic City,clear,Low
+18,Koramangala,rain,Moderate
+11,Koramangala,clear,Low
+11,HSR Layout,rain,Moderate
+9,Bellandur,clear,Moderate
+1,Bellandur,clear,Moderate
+17,HSR Layout,clear,Low
+12,HSR Layout,clear,Low
+12,Koramangala,clear,Low
+22,HSR Layout,clear,Low
+17,Electronic City,storm,High
+23,BTM Layout,clear,Low
+2,HSR Layout,clear,Low
+22,BTM Layout,storm,High
+13,BTM Layout,rain,Low
+9,BTM Layout,clear,Moderate
+13,Electronic City,clear,Low
+0,BTM Layout,rain,Moderate
+22,Bellandur,clear,Low
+15,BTM Layout,clear,Low
+0,BTM Layout,rain,Moderate
+21,Bellandur,clear,Low
+10,Bellandur,clear,Low
+2,Bellandur,rain,Low
+15,Koramangala,rain,Moderate
+1,Bellandur,clear,Low
+13,Bellandur,clear,Moderate
+18,BTM Layout,clear,Low
+1,HSR Layout,storm,Moderate
+18,Bellandur,clear,Moderate
+14,Koramangala,clear,Low
+7,HSR Layout,clear,Moderate
+5,Koramangala,rain,Moderate
+0,Koramangala,storm,High
+4,Electronic City,clear,Low
+6,Koramangala,storm,High
+21,Koramangala,rain,Moderate
+12,Koramangala,clear,Low
+4,Koramangala,storm,High
+17,Electronic City,clear,Moderate
+10,Electronic City,rain,Low
+20,Koramangala,clear,Moderate
+18,HSR Layout,clear,Moderate
+22,HSR Layout,clear,Low
+16,Electronic City,storm,High
+2,Electronic City,storm,Moderate
+13,Electronic City,clear,Low
+10,Bellandur,clear,Low
+19,BTM Layout,clear,Moderate
+3,BTM Layout,clear,Low
+11,Bellandur,flood_alert,High
+19,Electronic City,rain,Moderate
+14,HSR Layout,clear,Low
+0,Bellandur,clear,Low
+19,HSR Layout,rain,High
+8,BTM Layout,clear,Moderate
+16,HSR Layout,storm,Moderate
+15,Bellandur,rain,Moderate
+15,Koramangala,clear,Low
+10,Electronic City,rain,Low
+9,Bellandur,clear,Moderate
+2,HSR Layout,clear,Low
+13,Electronic City,clear,Low
+6,Bellandur,clear,Low
+9,Bellandur,clear,Moderate
+4,BTM Layout,clear,Moderate
+17,Electronic City,storm,High
+22,HSR Layout,clear,Low
+9,BTM Layout,clear,Low
+10,Bellandur,flood_alert,High
+11,HSR Layout,storm,High
+1,Electronic City,storm,High
+18,Bellandur,rain,High
+21,Electronic City,rain,Low
+12,HSR Layout,rain,Moderate
+1,BTM Layout,rain,Low
+8,HSR Layout,clear,Moderate
+3,Electronic City,clear,Low
+19,Electronic City,clear,Low
+19,Electronic City,clear,Moderate
+9,Koramangala,clear,Moderate
+9,BTM Layout,rain,Moderate
+20,HSR Layout,rain,High
+2,Electronic City,clear,Low
+18,HSR Layout,storm,Severe
+23,BTM Layout,clear,Low
+10,BTM Layout,flood_alert,Severe
+18,Koramangala,rain,High
+17,Bellandur,rain,High
+21,Bellandur,clear,Moderate
+0,HSR Layout,storm,Moderate
+16,HSR Layout,clear,Low
+9,BTM Layout,clear,Moderate
+20,BTM Layout,clear,Low
+20,Koramangala,clear,Low
+6,Bellandur,clear,Low
+13,BTM Layout,clear,Low
+11,BTM Layout,clear,Low
+13,Bellandur,flood_alert,Severe
+19,Electronic City,rain,High
+15,Bellandur,clear,Low
+18,HSR Layout,rain,High
+16,Bellandur,clear,Moderate
+6,Koramangala,rain,Moderate
+14,BTM Layout,rain,Low
+9,HSR Layout,flood_alert,Severe
+10,Electronic City,clear,Low
+2,BTM Layout,flood_alert,High
+4,BTM Layout,clear,Low
+8,Bellandur,clear,Moderate
+7,HSR Layout,clear,Moderate
+15,Bellandur,clear,Low
+7,Bellandur,storm,Severe
+5,Bellandur,clear,Low
+10,Koramangala,clear,Low
+13,Koramangala,rain,Moderate
+23,HSR Layout,clear,Low
+12,Bellandur,storm,Moderate
+8,HSR Layout,clear,High
+7,BTM Layout,storm,High
+10,Koramangala,storm,Moderate
+22,Bellandur,clear,Low
+8,Electronic City,clear,Moderate
+5,Bellandur,clear,Low
+13,BTM Layout,clear,Low
+18,BTM Layout,clear,Moderate
+22,Electronic City,storm,High
+6,HSR Layout,clear,Low
+21,BTM Layout,rain,Moderate
+20,Koramangala,rain,High
+9,Koramangala,clear,Moderate
+8,Electronic City,clear,Moderate
+6,Koramangala,storm,Low
+7,Bellandur,clear,Low
+21,Bellandur,clear,Low
+7,HSR Layout,clear,Moderate
+11,Koramangala,rain,Moderate
+22,HSR Layout,clear,Low
+16,Bellandur,clear,Low
+3,HSR Layout,rain,Moderate
+1,BTM Layout,rain,Moderate
+5,Bellandur,rain,Moderate
+20,HSR Layout,clear,Moderate
+5,Electronic City,clear,Low
+7,Koramangala,clear,Moderate
+12,Koramangala,clear,Low
+11,Bellandur,rain,Low
+1,Bellandur,clear,Low
+4,BTM Layout,flood_alert,High
+23,Bellandur,clear,Low
+10,BTM Layout,storm,High
+6,Koramangala,rain,Moderate
+19,BTM Layout,storm,High
+11,Electronic City,flood_alert,Severe
+19,HSR Layout,clear,Moderate
+3,HSR Layout,flood_alert,High
+11,HSR Layout,clear,Low
+19,Koramangala,rain,High
+18,Koramangala,flood_alert,Severe
+16,BTM Layout,rain,Low
+10,Koramangala,rain,Moderate
+19,Electronic City,clear,Low
+8,BTM Layout,rain,Moderate
+15,Electronic City,clear,Low
+13,Electronic City,clear,Low
+7,HSR Layout,clear,Moderate
+4,BTM Layout,flood_alert,High
+12,Electronic City,rain,Moderate
+7,HSR Layout,rain,High
+12,HSR Layout,clear,Low
+16,Koramangala,clear,Low
+19,Koramangala,storm,Severe
+18,Electronic City,clear,Moderate
+12,HSR Layout,flood_alert,Severe
+1,Electronic City,clear,Low
+4,Koramangala,clear,Low
+17,Bellandur,clear,Moderate
+14,Bellandur,clear,Low
+19,Koramangala,clear,Moderate
+11,Electronic City,clear,Low
+10,Koramangala,rain,Low
+5,Electronic City,clear,Low
+1,BTM Layout,clear,Low
+3,Koramangala,clear,Low
+16,Electronic City,clear,Low
+13,Koramangala,clear,Low
+5,Koramangala,clear,Low
+8,Electronic City,rain,Moderate
+15,HSR Layout,clear,Low
+9,Electronic City,clear,Moderate
+9,HSR Layout,rain,Moderate
+6,HSR Layout,clear,Low
+15,HSR Layout,storm,High
+21,BTM Layout,rain,Moderate
+6,Electronic City,clear,Low
+6,Electronic City,clear,Low
+11,BTM Layout,rain,Low
+4,BTM Layout,clear,Low
+12,Electronic City,rain,Moderate
+21,Electronic City,flood_alert,Severe
+15,HSR Layout,rain,Moderate
+3,Bellandur,clear,Low
+4,Koramangala,storm,High
+1,HSR Layout,clear,Low
+23,BTM Layout,clear,Low
+8,Bellandur,clear,Moderate
+6,BTM Layout,rain,Moderate
+20,Bellandur,flood_alert,Severe
+7,HSR Layout,rain,High
+5,Electronic City,clear,Low
+6,Bellandur,flood_alert,High
+9,Koramangala,clear,Moderate
+1,BTM Layout,clear,Low
+15,Koramangala,rain,Moderate
+10,BTM Layout,clear,Low
+23,Bellandur,clear,Low
+18,Bellandur,rain,High
+9,HSR Layout,rain,High
+17,HSR Layout,flood_alert,Severe
+19,Electronic City,clear,Moderate
+4,Electronic City,storm,High
+3,Bellandur,rain,Low
+3,Bellandur,clear,Low
+1,HSR Layout,clear,Low
+7,BTM Layout,rain,Moderate
+19,BTM Layout,clear,Moderate
+18,Bellandur,clear,Moderate
+9,Koramangala,storm,Severe
+11,HSR Layout,clear,Low
+18,Electronic City,clear,Moderate
+22,Koramangala,clear,Low
+6,BTM Layout,storm,High
+15,HSR Layout,rain,Low
+14,BTM Layout,clear,Low
+14,HSR Layout,flood_alert,Severe
+19,BTM Layout,clear,Moderate
+18,Koramangala,rain,High
+9,Bellandur,clear,Moderate
+18,Bellandur,rain,High
+1,Bellandur,rain,Moderate
+8,Koramangala,storm,High
+5,Koramangala,clear,Low
+6,Koramangala,clear,Low
+21,BTM Layout,rain,Moderate
+10,Electronic City,storm,High
+1,Koramangala,clear,Low
+11,HSR Layout,clear,Low
+1,HSR Layout,clear,Low
+3,HSR Layout,flood_alert,High
+9,BTM Layout,clear,Moderate
+10,Electronic City,clear,Low
+5,Koramangala,clear,Low
+15,Bellandur,storm,Moderate
+11,Bellandur,clear,Low
+3,Bellandur,rain,Low
+19,Electronic City,rain,High
+3,Koramangala,clear,Low
+8,BTM Layout,rain,Moderate
+4,Bellandur,clear,Low
+22,Electronic City,clear,Low
+6,Koramangala,clear,Moderate
+20,Electronic City,clear,Moderate
+23,Electronic City,rain,Low
+5,Bellandur,clear,Low
+0,Electronic City,clear,Low
+0,BTM Layout,storm,Moderate
+4,Koramangala,clear,Low
+9,Electronic City,clear,Moderate
+3,HSR Layout,rain,Moderate
+22,HSR Layout,clear,Low
+11,Electronic City,clear,Low
+20,BTM Layout,clear,High
+0,Koramangala,rain,Moderate
+3,Electronic City,clear,Low
+10,BTM Layout,flood_alert,High
+3,Koramangala,rain,Moderate
+3,Electronic City,clear,Low
+0,Electronic City,storm,Moderate
+6,BTM Layout,clear,Moderate
+18,BTM Layout,clear,Moderate
+19,Electronic City,storm,High
+12,Electronic City,clear,Low
+4,Bellandur,clear,Low
+10,BTM Layout,rain,Moderate
+14,Electronic City,rain,Moderate
+3,HSR Layout,rain,Moderate
+9,Bellandur,clear,Moderate
+19,Electronic City,clear,Low
+10,Koramangala,clear,Low
+11,BTM Layout,clear,Low
+19,Bellandur,clear,Moderate
+16,Bellandur,rain,Moderate
+3,Koramangala,clear,Low
+14,BTM Layout,clear,Low
+22,BTM Layout,storm,Moderate
+5,BTM Layout,clear,Low
+21,Electronic City,storm,Moderate
+14,Koramangala,rain,Moderate
+16,HSR Layout,rain,Moderate
+7,Bellandur,clear,Low
+1,HSR Layout,rain,Moderate
+0,BTM Layout,clear,Low
+15,Koramangala,clear,Low
+23,BTM Layout,storm,Moderate
+14,Bellandur,clear,Low
+8,Bellandur,clear,Moderate
+18,Electronic City,rain,High
+22,BTM Layout,clear,Low
+5,Electronic City,clear,Low
+2,Koramangala,storm,High
+22,Electronic City,clear,Low
+1,Koramangala,clear,Low
+21,BTM Layout,storm,Moderate
+3,HSR Layout,clear,Moderate
+2,BTM Layout,clear,Low
+6,Electronic City,storm,High
+7,Koramangala,clear,Moderate
+7,HSR Layout,flood_alert,Severe
+0,Koramangala,storm,Moderate
+20,HSR Layout,storm,High
+19,HSR Layout,clear,Low
+16,Bellandur,clear,Low
+21,Electronic City,rain,Low
+22,Bellandur,storm,High
+23,Koramangala,clear,Low
+9,Koramangala,clear,Moderate
+14,HSR Layout,clear,Low
+18,Koramangala,clear,Low
+15,Koramangala,clear,Low
+18,Bellandur,clear,Low
+16,Koramangala,rain,Low
+9,Bellandur,clear,Moderate
+13,BTM Layout,clear,Low
+4,HSR Layout,clear,Low
+22,HSR Layout,clear,Low
+21,Koramangala,clear,Low
+14,Koramangala,flood_alert,High
+18,HSR Layout,clear,Low
+8,Electronic City,clear,Moderate
+9,HSR Layout,rain,High
+12,Electronic City,flood_alert,High
+6,HSR Layout,rain,Moderate
+0,BTM Layout,rain,Moderate
+9,Koramangala,clear,Moderate
+17,Bellandur,clear,Moderate
+6,Bellandur,clear,Low
+16,Koramangala,storm,High
+14,HSR Layout,storm,High
+10,Electronic City,clear,Low
+17,BTM Layout,storm,Severe
+20,BTM Layout,rain,High
+22,BTM Layout,rain,Moderate
+18,Bellandur,clear,Low
+2,Electronic City,clear,Low
+8,HSR Layout,clear,Moderate
+12,BTM Layout,storm,Moderate
+1,Koramangala,storm,Moderate
+10,BTM Layout,storm,Moderate
+3,Koramangala,storm,High
+13,Bellandur,storm,Moderate
+4,Koramangala,clear,Low
+6,Bellandur,rain,Low
+7,HSR Layout,clear,Moderate
+23,BTM Layout,rain,Moderate
+10,Bellandur,clear,Low
+13,Electronic City,flood_alert,High
+22,Bellandur,storm,Moderate
+0,HSR Layout,clear,Moderate
+6,Koramangala,rain,Moderate
+10,Bellandur,storm,High
+21,Koramangala,clear,Low
+17,Koramangala,rain,High
+16,Koramangala,clear,Low
+9,BTM Layout,rain,High
+20,Koramangala,storm,Severe
+4,HSR Layout,rain,Low
+9,BTM Layout,clear,Low
+8,BTM Layout,rain,Moderate
+0,Bellandur,rain,Low
+2,BTM Layout,clear,Low
+18,HSR Layout,clear,Low
+22,HSR Layout,clear,Low
+5,BTM Layout,clear,Low
+1,BTM Layout,clear,Low
+3,Bellandur,rain,Low
+1,Bellandur,flood_alert,High
+19,Bellandur,clear,Moderate
+1,Koramangala,rain,Moderate
+16,BTM Layout,rain,Low
+19,Koramangala,rain,High
+5,BTM Layout,rain,Moderate
+5,Bellandur,clear,Low
+6,Electronic City,storm,Moderate
+18,Electronic City,clear,High
+22,Electronic City,clear,Moderate
+18,Koramangala,clear,Moderate
+6,BTM Layout,rain,Moderate
+17,BTM Layout,rain,High
+16,BTM Layout,clear,Low
+10,Electronic City,flood_alert,High
+3,HSR Layout,rain,Moderate
+7,BTM Layout,storm,High
+19,BTM Layout,clear,Moderate
+12,Koramangala,clear,Low
+2,Koramangala,clear,Low
+21,Bellandur,rain,Low
+12,Koramangala,clear,Moderate
+8,Bellandur,clear,Moderate
+0,HSR Layout,clear,Low
+13,Koramangala,clear,Low
+13,Koramangala,clear,Low
+3,BTM Layout,clear,Low
+20,HSR Layout,storm,Severe
+12,Koramangala,clear,Low
+2,BTM Layout,flood_alert,High
+4,Bellandur,storm,High
+6,BTM Layout,clear,Low
+17,Electronic City,rain,Moderate
+18,BTM Layout,rain,Moderate
+19,Koramangala,clear,Moderate
+14,HSR Layout,storm,High
+21,HSR Layout,storm,Moderate
+7,BTM Layout,clear,High
+13,HSR Layout,storm,High
+15,Electronic City,clear,Low
+8,Bellandur,clear,Moderate
+10,HSR Layout,clear,Low
+16,BTM Layout,clear,Low
+20,HSR Layout,clear,Moderate
+22,Electronic City,clear,Low
+7,Koramangala,clear,Moderate
+17,Bellandur,storm,High
+18,Bellandur,storm,High
+22,Koramangala,clear,Low
+15,HSR Layout,clear,Low
+4,HSR Layout,rain,Moderate
+17,Bellandur,clear,Moderate
+4,Electronic City,clear,Low
+9,Koramangala,rain,High
+11,Koramangala,clear,Low
+17,BTM Layout,rain,High
+4,Electronic City,rain,Moderate
+16,Bellandur,clear,Low
+3,Electronic City,clear,Low
+9,BTM Layout,clear,Moderate
+2,BTM Layout,clear,Low
+0,Koramangala,storm,Moderate
+7,Bellandur,rain,High
+23,BTM Layout,clear,Low
+13,Koramangala,storm,High
+17,BTM Layout,rain,High
+5,Koramangala,clear,Low
+4,BTM Layout,clear,Low
+21,Bellandur,clear,Low
+17,HSR Layout,flood_alert,Severe
+11,HSR Layout,clear,Low
+6,Electronic City,clear,Moderate
+20,BTM Layout,flood_alert,Severe
+11,Bellandur,clear,Moderate
+1,BTM Layout,storm,High
+20,Koramangala,clear,Moderate
+10,Koramangala,clear,Low
+10,Bellandur,clear,Low
+9,BTM Layout,storm,High
+6,Bellandur,rain,Moderate
+14,Koramangala,clear,Low
+7,Bellandur,clear,Moderate
+12,Koramangala,clear,Low
+1,Koramangala,clear,Low
+20,HSR Layout,clear,Moderate
+5,Koramangala,rain,Low
+14,Bellandur,clear,Low
+6,Koramangala,clear,Low
+4,Bellandur,clear,Low
+4,BTM Layout,clear,Low
+16,BTM Layout,storm,Moderate
+1,Bellandur,clear,Low
+19,Bellandur,rain,Moderate
+11,HSR Layout,clear,Low
+10,Bellandur,rain,Moderate
+5,Bellandur,rain,Low
+8,Koramangala,clear,Moderate
+17,Koramangala,rain,High
+21,BTM Layout,flood_alert,High
+22,HSR Layout,rain,Low
+14,Electronic City,rain,High
+6,Electronic City,clear,Low
+1,BTM Layout,clear,Low
+13,Koramangala,rain,Low
+13,Koramangala,storm,Moderate
+12,Bellandur,clear,Low
+12,BTM Layout,clear,Low
+1,Koramangala,clear,Low
+9,Bellandur,rain,High
+2,HSR Layout,clear,Low
+20,Electronic City,flood_alert,Severe
+21,Electronic City,rain,Low
+19,Koramangala,storm,High
+11,Electronic City,rain,Moderate
+19,Electronic City,rain,High
+19,HSR Layout,flood_alert,Severe
+8,HSR Layout,clear,Moderate
+1,Bellandur,rain,Moderate
+20,BTM Layout,clear,High
+14,Koramangala,rain,Low
+10,BTM Layout,clear,Low
+20,HSR Layout,rain,High
+22,Electronic City,clear,Low
+20,BTM Layout,rain,High
+0,Koramangala,rain,Moderate
+0,BTM Layout,storm,Moderate
+11,Bellandur,storm,High
+12,BTM Layout,clear,Low
+5,BTM Layout,rain,Moderate
+8,BTM Layout,clear,Moderate
+13,HSR Layout,clear,Low
+18,HSR Layout,rain,Severe
+18,BTM Layout,storm,High
+1,Koramangala,rain,Moderate
+9,HSR Layout,clear,Moderate
+6,Bellandur,rain,Moderate
+6,Electronic City,rain,Moderate
+19,BTM Layout,rain,High
+10,Koramangala,clear,Low
+11,Koramangala,storm,High
+23,BTM Layout,clear,Low
+10,Bellandur,storm,High
+18,Bellandur,rain,High
+23,Electronic City,rain,Low
+23,HSR Layout,storm,Moderate
+7,HSR Layout,flood_alert,Severe
+9,Electronic City,flood_alert,Severe
+1,Koramangala,clear,Moderate
+17,Electronic City,clear,High
+9,Koramangala,rain,High
+0,Electronic City,flood_alert,High
+3,Electronic City,rain,Moderate
+4,Electronic City,clear,Low
+1,Koramangala,clear,Low
+1,Bellandur,clear,Moderate
+13,HSR Layout,rain,Low
+5,Koramangala,storm,High
+22,Bellandur,clear,Low
+13,HSR Layout,clear,Low
+13,BTM Layout,clear,Low
+12,HSR Layout,clear,Low
+15,HSR Layout,clear,Low
+18,BTM Layout,clear,Moderate
+7,Electronic City,clear,Moderate
+14,Electronic City,storm,Moderate
+13,HSR Layout,clear,Low
+16,BTM Layout,storm,Moderate
+18,BTM Layout,clear,Low
+18,Electronic City,clear,Low
+14,HSR Layout,rain,Moderate
+1,Bellandur,clear,Low
+19,Electronic City,flood_alert,Severe
+23,Bellandur,flood_alert,High
+13,Koramangala,flood_alert,High
+10,HSR Layout,clear,Low
+4,BTM Layout,rain,Low
+11,HSR Layout,rain,Moderate
+13,Electronic City,storm,High
+18,BTM Layout,clear,Low
+11,Koramangala,clear,Low
+4,Koramangala,storm,High
+3,HSR Layout,clear,Low
+12,Koramangala,clear,Low
+14,Bellandur,clear,Low
+21,Koramangala,rain,Moderate
+19,Bellandur,clear,Low
+13,BTM Layout,rain,Low
+3,Bellandur,storm,Moderate
+19,Koramangala,clear,Moderate
+13,BTM Layout,flood_alert,High
+20,BTM Layout,storm,High
+17,Bellandur,flood_alert,Severe
+7,HSR Layout,rain,High
+9,Bellandur,clear,Moderate
+9,Koramangala,clear,Moderate
+6,Bellandur,storm,High
+18,HSR Layout,clear,Moderate
+8,Bellandur,clear,Moderate
+16,HSR Layout,rain,Moderate
+13,Bellandur,rain,Moderate
+9,BTM Layout,rain,Moderate
+16,HSR Layout,rain,Low
+4,HSR Layout,clear,Low
+13,Koramangala,rain,Moderate
+3,Electronic City,clear,Low
+2,Koramangala,clear,Low
+19,Electronic City,storm,Severe
+19,Koramangala,storm,Severe
+16,HSR Layout,rain,Low
+22,BTM Layout,clear,Low
+14,HSR Layout,clear,Low
+2,HSR Layout,flood_alert,High
+9,Bellandur,flood_alert,Severe
+5,Koramangala,clear,Low
+17,BTM Layout,rain,High
+4,Bellandur,clear,Low
+14,BTM Layout,clear,Low
+20,Koramangala,rain,High
+4,Koramangala,clear,Low
+21,Koramangala,storm,High
+16,BTM Layout,storm,Moderate
+1,Koramangala,clear,Low
+12,Electronic City,rain,Moderate
+7,Bellandur,clear,Moderate
+16,BTM Layout,clear,Low
+4,BTM Layout,clear,Low
+11,BTM Layout,clear,Moderate
+11,Electronic City,storm,Moderate
+11,Bellandur,rain,Low
+22,Electronic City,clear,Low
+22,Electronic City,clear,Low
+1,Bellandur,flood_alert,Severe
+18,BTM Layout,rain,High
+4,Bellandur,rain,Moderate
+3,BTM Layout,clear,Low
+11,Bellandur,storm,High
+23,Bellandur,rain,Moderate
+12,Koramangala,rain,Low
+14,BTM Layout,clear,Low
+17,Electronic City,rain,Moderate
+11,Koramangala,clear,Low
+10,HSR Layout,clear,Low
+16,BTM Layout,rain,Moderate
+3,Koramangala,storm,High
+21,BTM Layout,clear,Low
+8,BTM Layout,clear,Moderate
+14,Electronic City,clear,Low
+23,Bellandur,rain,Moderate
+18,HSR Layout,rain,High
+18,Koramangala,clear,Moderate
+19,Koramangala,clear,Moderate
+2,Electronic City,clear,Low
+10,Electronic City,clear,Low
+19,Bellandur,clear,Moderate
+6,Electronic City,clear,Low
+7,Bellandur,clear,Moderate
+21,Koramangala,flood_alert,High
+18,HSR Layout,clear,High
+6,Electronic City,clear,Low
+0,Electronic City,rain,Moderate
+11,BTM Layout,clear,Low
+20,HSR Layout,clear,Moderate
+13,Bellandur,storm,High
+3,Koramangala,clear,Low
+11,BTM Layout,clear,Low
+10,Electronic City,storm,Moderate
+14,Bellandur,flood_alert,Severe
+15,Electronic City,storm,High
+5,HSR Layout,clear,Low
+12,Electronic City,rain,Moderate
+11,Electronic City,storm,Moderate
+3,Electronic City,clear,Low
+11,Electronic City,flood_alert,High
+3,Koramangala,clear,Low
+4,HSR Layout,rain,Moderate
+6,HSR Layout,clear,Low
+23,BTM Layout,clear,Low
+1,Bellandur,clear,Low
+20,Koramangala,flood_alert,Severe
+5,HSR Layout,clear,Low
+22,Koramangala,storm,Moderate
+3,Electronic City,clear,Low
+14,HSR Layout,clear,Low
+11,HSR Layout,clear,Low
+5,Koramangala,flood_alert,Severe
+8,Koramangala,clear,Low
+9,HSR Layout,storm,High
+14,Koramangala,clear,Low
+17,Bellandur,flood_alert,Severe
+6,HSR Layout,rain,Moderate
+9,Electronic City,clear,Low
+0,Bellandur,clear,Low
+6,Koramangala,clear,Low
+7,HSR Layout,clear,Moderate
+19,HSR Layout,clear,Moderate
+18,Electronic City,rain,Moderate
+18,Koramangala,rain,High
+6,BTM Layout,clear,Low
+5,HSR Layout,clear,Low
+9,Koramangala,flood_alert,Severe
+10,Koramangala,clear,Low
+18,Electronic City,clear,Low
+20,Koramangala,clear,Moderate
+9,BTM Layout,clear,Moderate
+5,Electronic City,clear,Low
+21,Koramangala,clear,Low
+12,Koramangala,clear,Low
+22,Electronic City,clear,Low
+9,Electronic City,rain,High
+7,Electronic City,clear,Low
+1,HSR Layout,clear,Low
+17,BTM Layout,clear,Moderate
+11,HSR Layout,clear,Low
+6,Koramangala,rain,Moderate
+10,Bellandur,clear,Low
+3,Electronic City,clear,Low
+23,BTM Layout,clear,Low
+10,Electronic City,clear,Low
+7,Electronic City,storm,High
+14,Koramangala,clear,Low
+19,Electronic City,clear,Low
+22,HSR Layout,clear,Low
+16,Koramangala,storm,Moderate
+3,Electronic City,clear,Low
+10,HSR Layout,storm,Moderate
+17,BTM Layout,flood_alert,Severe
+19,Electronic City,clear,Moderate
+11,Koramangala,clear,Low
+20,BTM Layout,rain,Moderate
+3,Bellandur,clear,Moderate
+8,BTM Layout,clear,Moderate
+23,Koramangala,clear,Low
+4,HSR Layout,rain,Moderate
+16,Electronic City,flood_alert,Severe
+5,HSR Layout,storm,High
+3,Koramangala,rain,Moderate
+3,HSR Layout,clear,Low
+21,HSR Layout,flood_alert,Severe
+23,BTM Layout,rain,Moderate
+2,HSR Layout,flood_alert,High
+16,Koramangala,rain,Moderate
+2,Koramangala,rain,Low
+19,Koramangala,rain,Moderate
+7,Electronic City,clear,High
+1,HSR Layout,clear,Low
+22,Koramangala,clear,Low
+22,BTM Layout,flood_alert,High
+0,Bellandur,flood_alert,High
+9,Bellandur,rain,High
+22,Electronic City,clear,Low
+8,Koramangala,clear,Moderate
+14,HSR Layout,clear,Low
+20,Electronic City,clear,Low
+1,Koramangala,clear,Low
+11,Koramangala,clear,Moderate
+13,Electronic City,rain,Moderate
+22,BTM Layout,rain,Moderate
+11,HSR Layout,clear,Low
+20,Electronic City,clear,Moderate
+13,Electronic City,clear,Low
+10,HSR Layout,clear,Low
+17,Electronic City,rain,High
+20,HSR Layout,clear,High
+16,HSR Layout,storm,Moderate
+14,BTM Layout,clear,Low
+23,Bellandur,clear,Low
+14,Bellandur,rain,Moderate
+3,Bellandur,storm,Moderate
+22,Koramangala,storm,Moderate
+19,BTM Layout,clear,Moderate
+8,Koramangala,clear,Moderate
+9,Koramangala,clear,Low
+15,Bellandur,flood_alert,High
+18,Koramangala,rain,High
+16,HSR Layout,rain,Low
+21,Koramangala,clear,Low
+1,Electronic City,flood_alert,Severe
+23,Koramangala,clear,Low
+11,Koramangala,rain,Moderate
+6,HSR Layout,rain,Moderate
+5,HSR Layout,storm,High
+10,Electronic City,storm,Moderate
+7,Bellandur,clear,Moderate
+22,Electronic City,clear,Low
+11,Electronic City,flood_alert,High
+22,Koramangala,rain,Moderate
+16,Bellandur,clear,Low
+8,BTM Layout,clear,Moderate
+9,BTM Layout,storm,High
+22,Bellandur,storm,High
+15,HSR Layout,rain,Low
+9,Koramangala,clear,Moderate
+17,Koramangala,rain,High
+8,Koramangala,flood_alert,Severe
+5,Bellandur,rain,Moderate
+18,Electronic City,rain,Moderate
+2,HSR Layout,storm,Moderate
+11,Koramangala,rain,Moderate
+9,Koramangala,clear,High
+10,Bellandur,clear,Low
+5,Electronic City,rain,Moderate
+9,Electronic City,storm,High
+2,Bellandur,flood_alert,High
+10,Koramangala,clear,Low
+17,Koramangala,clear,Low
+3,Electronic City,rain,Moderate
+3,HSR Layout,storm,High
+1,HSR Layout,clear,Low
+19,HSR Layout,rain,Moderate
+18,BTM Layout,clear,Moderate
+1,Electronic City,flood_alert,High
+13,Electronic City,clear,Low
+11,Koramangala,clear,Low
+16,Electronic City,rain,Low
+8,HSR Layout,clear,Moderate
+19,Electronic City,clear,Moderate
+12,Bellandur,clear,Low
+5,BTM Layout,clear,Moderate
+12,HSR Layout,clear,Low
+5,Electronic City,clear,Low
+12,Koramangala,rain,Moderate
+6,Koramangala,clear,Low
+10,Electronic City,rain,Moderate
+7,Bellandur,storm,High
+12,HSR Layout,rain,Moderate
+18,Koramangala,clear,Low
+16,Koramangala,flood_alert,High
+8,HSR Layout,clear,Low
+11,Bellandur,clear,Low
+7,Bellandur,clear,Moderate
+7,BTM Layout,rain,Moderate
+15,BTM Layout,clear,Low
+18,HSR Layout,clear,Low
+4,BTM Layout,rain,Low
+6,Electronic City,clear,Low
+2,HSR Layout,clear,Low
+23,BTM Layout,clear,Low
+16,Electronic City,clear,Low
+3,Koramangala,clear,Low
+18,Koramangala,rain,Moderate
+7,Bellandur,clear,Moderate
+7,Koramangala,clear,Moderate
+11,Koramangala,rain,Moderate
+15,Electronic City,storm,Moderate
+15,BTM Layout,rain,Low
+0,Electronic City,clear,Moderate
+17,BTM Layout,flood_alert,Severe
+9,BTM Layout,clear,Moderate
+21,BTM Layout,storm,High
+13,Koramangala,clear,Low
+22,HSR Layout,clear,Low
+6,Bellandur,storm,Moderate
+15,Electronic City,rain,Moderate
+8,Electronic City,flood_alert,Severe
+20,BTM Layout,storm,High
+14,Koramangala,clear,Low
+18,Koramangala,clear,Moderate
+14,Electronic City,rain,Low
+18,Bellandur,clear,Moderate
+3,BTM Layout,clear,Low
+5,Koramangala,flood_alert,High
+16,Bellandur,clear,Low
+4,BTM Layout,clear,Low
+1,Electronic City,clear,Low
+13,HSR Layout,clear,Low
+23,Koramangala,clear,Low
+7,Koramangala,clear,Moderate
+4,BTM Layout,storm,Moderate
+17,BTM Layout,clear,Moderate
+6,BTM Layout,rain,Low
+18,BTM Layout,clear,Low
+4,Koramangala,clear,Low
+4,HSR Layout,flood_alert,High
+23,Bellandur,clear,Low
+14,HSR Layout,flood_alert,High
+6,BTM Layout,clear,Low
+10,BTM Layout,rain,Moderate
+14,Bellandur,rain,Moderate
+1,Electronic City,clear,Low
+23,HSR Layout,clear,Low
+11,Bellandur,clear,Low
+22,Electronic City,clear,Low
+18,Koramangala,clear,Moderate
+1,Electronic City,clear,Low
+19,HSR Layout,clear,Moderate
+12,HSR Layout,clear,Low
+21,Koramangala,clear,Moderate
+14,Electronic City,clear,Low
+6,BTM Layout,clear,Low
+16,Bellandur,rain,Low
+6,HSR Layout,clear,Low
+8,HSR Layout,flood_alert,Severe
+14,Electronic City,clear,Low
+7,Electronic City,flood_alert,High
+22,HSR Layout,clear,Low
+0,Bellandur,clear,Low
+9,Bellandur,clear,Moderate
+0,BTM Layout,storm,Moderate
+17,HSR Layout,clear,Moderate
+13,Electronic City,storm,High
+3,Bellandur,rain,Moderate
+1,Bellandur,clear,Low
+17,Koramangala,clear,Low
+4,HSR Layout,clear,Low
+20,Electronic City,clear,Moderate
+7,Electronic City,rain,Moderate
+13,Electronic City,clear,Low
+1,BTM Layout,flood_alert,High
+12,Bellandur,clear,Low
+0,Electronic City,clear,Low
+5,HSR Layout,rain,Moderate
+22,Koramangala,clear,Low
+23,Bellandur,rain,Low
+10,BTM Layout,clear,Low
+21,Koramangala,clear,Low
+4,Electronic City,clear,Low
+14,Koramangala,clear,Low
+17,Koramangala,storm,Severe
+21,Koramangala,rain,Low
+0,Bellandur,clear,Low
+14,Electronic City,rain,Low
+5,Koramangala,storm,High
+9,Bellandur,clear,Moderate
+23,HSR Layout,flood_alert,High
+15,Bellandur,clear,Low
+21,Koramangala,rain,Moderate
+4,Bellandur,clear,Low
+15,Koramangala,clear,Low
+22,Koramangala,clear,Low
+2,HSR Layout,rain,Low
+20,Bellandur,clear,Moderate
+7,BTM Layout,rain,Moderate
+10,BTM Layout,flood_alert,High
+0,Bellandur,clear,Low
+20,Electronic City,clear,Low
+5,Bellandur,rain,Low
+23,BTM Layout,clear,Low
+0,Koramangala,clear,Low
+2,BTM Layout,clear,Low
+3,Koramangala,rain,Low
+16,HSR Layout,storm,Moderate
+15,BTM Layout,flood_alert,Moderate
+4,Bellandur,storm,Moderate
+2,Bellandur,clear,Low
+6,BTM Layout,storm,Moderate
+3,Bellandur,rain,Low
+17,BTM Layout,clear,Moderate
+21,Bellandur,flood_alert,High
+10,Electronic City,clear,Low
+8,Bellandur,rain,Moderate
+12,Bellandur,rain,Moderate
+7,Electronic City,storm,High
+4,Electronic City,rain,Low
+2,Koramangala,flood_alert,Severe
+15,Koramangala,clear,Low
+19,Bellandur,clear,Moderate
+12,HSR Layout,clear,Low
+16,BTM Layout,rain,Moderate
+2,BTM Layout,clear,Low
+13,HSR Layout,clear,Low
+16,Koramangala,clear,Low
+14,Electronic City,rain,Moderate
+0,HSR Layout,clear,Low
+2,Bellandur,rain,Low
+23,BTM Layout,clear,Low
+6,Koramangala,storm,High
+5,Koramangala,rain,Low
+14,BTM Layout,clear,Low
+17,Bellandur,clear,Moderate
+22,Electronic City,clear,Low
+17,HSR Layout,clear,Low
+19,BTM Layout,clear,Moderate
+22,Koramangala,clear,Low
+15,Electronic City,clear,Low
+14,Bellandur,clear,Low
+12,HSR Layout,clear,Low
+4,Electronic City,storm,High
+0,Bellandur,rain,Moderate
+2,HSR Layout,clear,Low
+21,BTM Layout,clear,Moderate
+7,Bellandur,clear,High
+1,Electronic City,clear,Low
+3,BTM Layout,clear,Moderate
+3,BTM Layout,clear,Low
+9,Koramangala,clear,Low
+16,BTM Layout,rain,Moderate
+19,HSR Layout,clear,Moderate
+19,Koramangala,rain,High
+23,Bellandur,clear,Low
+18,Bellandur,clear,Moderate
+6,Koramangala,clear,Low
+10,Bellandur,clear,Low
+15,Koramangala,clear,Low
+4,Electronic City,clear,Low
+16,Electronic City,storm,Moderate
+0,Electronic City,clear,Low
+5,Koramangala,clear,Low
+20,BTM Layout,clear,Moderate
+7,Electronic City,rain,High
+23,Electronic City,storm,High
+20,Electronic City,rain,High
+5,HSR Layout,clear,Low
+22,HSR Layout,rain,Moderate
+20,BTM Layout,storm,Severe
+23,Koramangala,clear,Low
+9,Bellandur,rain,Moderate
+21,Bellandur,rain,Moderate
+7,BTM Layout,clear,Moderate
+8,BTM Layout,clear,Moderate
+12,Koramangala,rain,Low
+8,BTM Layout,clear,Moderate
+0,Bellandur,clear,Low
+17,Bellandur,clear,Low
+10,Electronic City,flood_alert,High
+19,Koramangala,clear,Moderate
+4,HSR Layout,clear,Low
+5,BTM Layout,clear,Low
+17,Koramangala,flood_alert,Severe
+16,Koramangala,clear,Low
+12,Bellandur,rain,Moderate
+14,Electronic City,clear,Low
+20,Electronic City,rain,Moderate
+21,BTM Layout,clear,Low
+21,Koramangala,rain,Moderate
+23,Electronic City,clear,Low
+7,Electronic City,rain,High
+19,HSR Layout,clear,Moderate
+6,Koramangala,clear,Low
+20,HSR Layout,clear,Moderate
+22,Koramangala,clear,Moderate
+10,BTM Layout,clear,Low
+12,Bellandur,clear,Moderate
+2,HSR Layout,clear,Low
+2,BTM Layout,clear,Low
+4,Bellandur,storm,High
+1,Electronic City,clear,Low
+9,Koramangala,clear,Low
+23,Electronic City,rain,Low
+16,BTM Layout,storm,High
+13,Koramangala,rain,Low
+17,Koramangala,clear,Moderate
+1,BTM Layout,clear,Low
+15,BTM Layout,clear,Low
+12,BTM Layout,rain,Moderate
+2,Bellandur,clear,Low
+12,Koramangala,clear,Low
+15,Bellandur,clear,Low
+10,BTM Layout,storm,Moderate
+22,Koramangala,clear,Low
+22,Electronic City,rain,Moderate
+8,HSR Layout,rain,High
+22,Bellandur,clear,Moderate
+5,Koramangala,rain,Moderate
+2,Electronic City,clear,Low
+15,HSR Layout,clear,Low
+3,HSR Layout,clear,Low
+7,BTM Layout,clear,Low
+9,HSR Layout,rain,High
+16,Electronic City,clear,Low
+20,BTM Layout,clear,Moderate
+21,Electronic City,clear,Low
+14,Koramangala,storm,Moderate
+23,BTM Layout,clear,Low
+17,Bellandur,clear,Moderate
+20,Bellandur,rain,Moderate
+13,Bellandur,storm,High
+2,HSR Layout,rain,Moderate
+5,HSR Layout,clear,Low
+9,HSR Layout,clear,Moderate
+19,BTM Layout,clear,Moderate
+9,Koramangala,flood_alert,Severe
+0,BTM Layout,rain,Low
+10,BTM Layout,clear,Low
+16,HSR Layout,storm,High
+23,Koramangala,clear,Low
+4,Koramangala,clear,Low
+7,HSR Layout,rain,High
+11,Electronic City,flood_alert,High
+11,Koramangala,clear,Low
+23,Electronic City,clear,Low
+9,Electronic City,clear,Moderate
+12,Electronic City,rain,Low
+6,BTM Layout,clear,Low
+1,Bellandur,rain,Low
+9,Bellandur,rain,Moderate
+10,Koramangala,clear,Moderate
+4,BTM Layout,storm,High
+15,Bellandur,clear,Low
+7,Electronic City,rain,High
+1,HSR Layout,clear,Low
+12,Koramangala,clear,Low
+6,Bellandur,clear,Low
+17,Koramangala,clear,Moderate
+0,Koramangala,clear,Low
+18,Bellandur,clear,Moderate
+12,HSR Layout,clear,Low
+17,BTM Layout,clear,Moderate
+9,Koramangala,clear,Moderate
+21,BTM Layout,rain,Low
+12,HSR Layout,flood_alert,High
+23,BTM Layout,clear,Low
+7,Bellandur,storm,High
+20,Electronic City,rain,Moderate
+15,BTM Layout,clear,Low
+22,Electronic City,clear,Low
+4,BTM Layout,storm,Moderate
+12,HSR Layout,clear,Low
+21,Electronic City,clear,Low
+5,Koramangala,rain,Low
+23,Electronic City,rain,Low
+23,Bellandur,storm,Moderate
+11,BTM Layout,clear,Low
+17,HSR Layout,clear,Moderate
+11,Electronic City,clear,Low
+15,BTM Layout,clear,Low
+20,Bellandur,rain,Severe
+17,Bellandur,flood_alert,Severe
+6,BTM Layout,clear,Low
+13,HSR Layout,clear,Low
+19,Koramangala,clear,Moderate
+13,HSR Layout,clear,Low
+6,Bellandur,rain,Low
+18,Koramangala,flood_alert,Severe
+17,Electronic City,clear,High
+15,Electronic City,rain,Moderate
+8,Bellandur,storm,High
+13,BTM Layout,clear,Low
+14,Bellandur,storm,Moderate
+5,Bellandur,rain,Moderate
+22,BTM Layout,rain,Moderate
+14,Koramangala,clear,Low
+1,Koramangala,clear,Low
+6,HSR Layout,clear,Low
+19,Electronic City,storm,Severe
+16,BTM Layout,storm,High
+13,HSR Layout,clear,Low
+11,Electronic City,clear,Low
+9,Koramangala,clear,Moderate
+22,Electronic City,rain,Low
+8,HSR Layout,rain,Moderate
+19,HSR Layout,flood_alert,Severe
+1,Koramangala,rain,Moderate
+12,Electronic City,clear,Low
+6,Electronic City,clear,Low
+10,BTM Layout,rain,Low
+14,HSR Layout,storm,High
+1,BTM Layout,clear,Low
+2,Koramangala,clear,Low
+13,BTM Layout,clear,Low
+16,Bellandur,clear,Low
+1,Electronic City,clear,Low
+23,BTM Layout,clear,Low
+10,Koramangala,clear,Low
+23,BTM Layout,clear,Low
+3,Koramangala,storm,High
+21,Koramangala,flood_alert,Moderate
+15,Koramangala,clear,Low
+19,Koramangala,rain,High
+19,Bellandur,rain,Moderate
+4,Electronic City,clear,Low
+4,Bellandur,clear,Low
+23,HSR Layout,clear,Low
+10,BTM Layout,clear,Low
+4,HSR Layout,clear,Low

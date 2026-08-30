@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Hospitals{% endblock %}
+{% block page_title %}Hospital Resources{% endblock %}
+{% block page_subtitle %}HOSPITAL AGENT · CAPACITY MONITOR{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="section-title">Facility status</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Hospital</th><th>Location</th><th>Beds</th><th>ICU</th>
+        <th>Doctors</th><th>Ambulances</th><th>Contact</th>
+      </tr>
+    </thead>
+    <tbody id="hospital-rows">
+      <tr><td colspan="7" class="empty-state">Loading…</td></tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/hospitals.js') }}"></script>
+{% endblock %}

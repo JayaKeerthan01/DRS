@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Overview{% endblock %}
+{% block page_title %}Mission Overview{% endblock %}
+{% block page_subtitle %}COORDINATOR AGENT · ALL SYSTEMS REPORTING{% endblock %}
+
+{% block content %}
+<div class="grid grid-4" style="margin-bottom:18px;">
+  <div class="card">
+    <div class="card-eyebrow">Weather Status <span class="live-dot"></span></div>
+    <div class="metric-value" id="m-weather-risk">—</div>
+    <div class="metric-label" id="m-weather-zone">Highest-risk zone</div>
+  </div>
+  <div class="card">
+    <div class="card-eyebrow">Traffic Status <span class="live-dot"></span></div>
+    <div class="metric-value" id="m-traffic-status">—</div>
+    <div class="metric-label" id="m-traffic-zone">Worst road condition</div>
+  </div>
+  <div class="card">
+    <div class="card-eyebrow">Hospital Status <span class="live-dot"></span></div>
+    <div class="metric-value" id="m-beds">—</div>
+    <div class="metric-label">Beds available network-wide</div>
+  </div>
+  <div class="card">
+    <div class="card-eyebrow">Rescue Status <span class="live-dot"></span></div>
+    <div class="metric-value" id="m-teams">—</div>
+    <div class="metric-label">Teams currently available</div>
+  </div>
+</div>
+
+<div class="grid grid-split" style="margin-bottom:18px;">
+  <div class="card">
+    <div class="section-title">Zone risk &amp; priority ranking</div>
+    <div class="zone-list" id="zone-priority-list">
+      <div class="empty-state">Loading zone data…</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-title">Recommended deployment</div>
+    <div id="deployment-panel">
+      <div class="empty-state">Waiting for Rescue Agent…</div>
+    </div>
+  </div>
+</div>
+
+<div class="grid grid-split">
+  <div class="card" style="min-height:420px;">
+    <div class="card-eyebrow">Live situational map <span class="live-dot"></span></div>
+    <div id="map" class="map-canvas"></div>
+  </div>
+
+  <div class="card">
+    <div class="section-title">Nearest suitable hospitals</div>
+    <div id="hospital-recs">
+      <div class="empty-state">Waiting for Hospital Agent…</div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}

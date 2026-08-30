@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Traffic{% endblock %}
+{% block page_title %}Traffic &amp; Evacuation Routes{% endblock %}
+{% block page_subtitle %}TRAFFIC AGENT · CONGESTION MODEL{% endblock %}
+
+{% block content %}
+<div class="grid grid-split" style="margin-bottom:18px;">
+  <div class="card">
+    <div class="section-title">Road status by zone</div>
+    <table>
+      <thead>
+        <tr><th>Zone</th><th>Congestion</th><th>Road status</th><th>Confidence</th></tr>
+      </thead>
+      <tbody id="traffic-rows">
+        <tr><td colspan="4" class="empty-state">Loading…</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="section-title">Compute safest evacuation route</div>
+    <div class="field">
+      <label for="from-zone">Evacuate from</label>
+      <select id="from-zone" style="width:100%; background:var(--ink-850); border:1px solid var(--line-600); border-radius:6px; padding:10px; color:var(--signal-100); font-family: var(--font-body);">
+        {% for z in zones %}
+          <option value="{{ z.name }}">{{ z.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <button class="btn btn-primary" id="route-btn" style="width:100%; justify-content:center;">Find safest route</button>
+    <div id="route-result" style="margin-top:16px;"></div>
+  </div>
+</div>
+
+<div class="card" style="min-height:420px;">
+  <div class="card-eyebrow">Route map <span class="live-dot"></span></div>
+  <div id="traffic-map" class="map-canvas"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="{{ url_for('static', filename='js/traffic.js') }}"></script>
+{% endblock %}
